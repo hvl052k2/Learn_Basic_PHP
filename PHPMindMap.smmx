@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE simplemind-mindmaps>
+<simplemind-mindmaps generator="SimpleMindWin32" gen-version="1.15.0" doc-version="3">
+<mindmap>
+<meta>
+<guid guid="6669B3543F4840378A6362FACC12E2DC"/>
+<title text="PHP"/>
+<style key="system.bright-palette"/>
+<auto-numbering style="disabled"/>
+<scrollstate zoom="90" x="1698" y="2689"/>
+<selection guid="9K7pPqgPFUi9f7KW2L7QTg" type="node" id="169"/>
+<main-centraltheme id="0"/>
+</meta>
+<topics>
+<topic id="0" parent="-1" guid="awvEo8or5EuS_wLBL4seeg" x="1314.29" y="954.29" layout="top-down" palette="1" colorinfo="1" text="PHP"/>
+<topic id="1" parent="0" guid="RTe6caML-0ailRH-srCFzQ" x="-308.81" y="1060.61" palette="2" colorinfo="2" text="Cơ bản"/>
+<topic id="2" parent="1" guid="RqCPX5x6a0aQwMtXRHkSLg" x="-240.52" y="1107.28" text="Kiểm tra kiểu dữ liệu">
+<note>
+var_dump($ten); // kiểm tra kiểu dữ liệu
+</note>
+</topic>
+<topic id="3" parent="1" guid="90_raq6Uhk-RaCoYXFz_Dg" x="-219.02" y="1151.84" text="Đếm số phần tử trong mảng">
+<note>
+$a = [1,2,3,4,5];echo count($a);
+</note>
+</topic>
+<topic id="4" parent="1" guid="rPp-ANEIQkadpToTePRG0w" x="-243.02" y="1204.40" text="Kiểm tra một biến \Ncó tồn tại hay không">
+<note>
+$a = 1;if(isset($b)){    echo &quot;have b&quot;;}else{    echo &quot;no b&quot;;}
+</note>
+</topic>
+<topic id="5" parent="1" guid="n_w-Lx-qwkWfK5nXFoVBGw" x="-240.02" y="1256.96" text="Yêu cầu nghiêm ngặt">
+<note>
+&lt;?php declare(strict_type=1)?&gt;
+</note>
+</topic>
+<topic id="6" parent="1" guid="sWtbDNW_9UuGSam7M2XyUA" x="-275.52" y="1301.52" text="Array json">
+<note>
+&lt;?php$thongtin = [&quot;linh&quot; =&gt; &quot;2002&quot;, &quot;minh&quot; =&gt; &quot;2003&quot;, &quot;hung&quot; =&gt; &quot;1999&quot;];echo $thongtin[&quot;linh&quot;];
+</note>
+</topic>
+<topic id="7" parent="1" guid="q9m5uTDb9k-CtSx1sLr7eQ" x="-236.02" y="1346.08" text="Các thao tác với mảng"/>
+<topic id="8" parent="7" guid="cSRD2-hjPU6CoQnr-biZdw" x="-207.02" y="1390.64" text="Hiển thị toàn bộ mảng">
+<note>
+&lt;?php    $myArrays = [        [1, 2, 3],        [2, 3, 4, 5],        [5, 6, 7, 8]    ];    print_r($myArrays);    ?&gt;
+</note>
+</topic>
+<topic id="9" parent="7" guid="RZZxyckf5kWKX3iX_QnOFA" x="-189.02" y="1435.20" text="Thay thế và thêm vào mảng">
+<note>
+&lt;?php    $myArrays = [        [1, 2, 3],        [2, 3, 4, 5],        [5, 6, 7, 8]    ];    $myArrays[1] = [9,9,8,8]; //thay đổi giá trị thứ 2 trong mảng    $myArrays[3] = [0,2,4,6]; //thêm phần tử vào vị trí thứ 3 trong mảng    $myArrays[] = [2,2,2,2]; //thêm phần tử vào cuối mảng    print_r($myArrays);    ?&gt;
+</note>
+</topic>
+<topic id="10" parent="7" guid="tE0yQeJJcUq4aqkeCgjJtQ" x="-200.02" y="1479.76" text="Xóa phần tử trong mảng">
+<note>
+&lt;?php    $myArrays = [        [1, 2, 3],        [2, 3, 4, 5],        [5, 6, 7, 8]    ];    unset($name[1]); // xóa phần tử tại ví trị 1 trong mảng    print_r($myArrays);    ?&gt;
+</note>
+</topic>
+<topic id="11" parent="1" guid="h0UZ_PTWukSB216NiXNKHw" x="-279.02" y="1524.32" text="Vòng lặp"/>
+<topic id="12" parent="11" x="-238.52" y="1568.88" text="Vòng lặp for"/>
+<topic id="13" parent="11" x="-219.52" y="1613.44" text="Vòng lặp do while"/>
+<topic id="14" parent="11" guid="u6t4Ei9J70CO5RhfIorRrg" x="-229.52" y="1658.00" text="Vòng lặp while"/>
+<topic id="15" parent="1" guid="lw4VjRZgXU-E_mhfz36TIQ" x="-281.02" y="1702.56" text="Sắp xếp"/>
+<topic id="16" parent="15" x="-193.52" y="1747.12" text="Sắp xếp tăng với hàm sort"/>
+<topic id="17" parent="15" x="-205.02" y="1791.68" text="Sắp xếp giảm với rsort"/>
+<topic id="18" parent="1" guid="WIC-gOSvQU-RJWLUHp1_pw" x="-187.02" y="1836.24" text="Chuyển String sang array với explode">
+<note>
+&lt;?php    $a = &quot;18/05/2002&quot;;    $myArray = explode(&quot;/&quot;, $a);    print_r($myArray);?&gt;
+</note>
+</topic>
+<topic id="19" parent="1" guid="yhlapgeATk-sx-Ti49dfNQ" x="-190.52" y="1880.80" text="Chuyển array sangstring với implode">
+<note>
+&lt;?php    $myArray = [1, 2, 3, 4, 5];    $myString = implode(&quot;-&quot;, $myArray);    print_r($myString);?&gt;
+</note>
+</topic>
+<topic id="20" parent="1" guid="vgVA_D2BoUSppgCURKUVDA" x="-265.02" y="1925.36" text="Chuyển trang">
+<note>
+&lt;?php    header(&apos;location: xuly.php&apos;)?&gt;
+</note>
+</topic>
+<topic id="21" parent="1" guid="r6ZiKSIsykimpTr7qZRb1w" x="-263.52" y="1969.92" text="Biến toàn cầu"/>
+<topic id="22" parent="21" guid="bFrnCwg5-E-4qxa2AahLNw" x="-242.52" y="2014.48" text="$GLOBALS">
+<note>
+&lt;?php    $a = 5;    $b = 10;    function add(){        $GLOBALS[&apos;c&apos;] = $GLOBALS[&apos;a&apos;] + $GLOBALS[&apos;b&apos;];    }    add();    echo $c;?&gt;
+</note>
+</topic>
+<topic id="23" parent="21" guid="cYhqePOJr0StuB0kwAQViA" x="-252.52" y="2059.04" text="$_POST">
+<note>
+&lt;form action=&quot;index.php&quot; method=&quot;post&quot;&gt;    &lt;input type=&quot;text&quot; name=&quot;dulieu&quot;&gt;    &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;&lt;?php    echo $_POST[&apos;dulieu&apos;];?&gt;
+</note>
+</topic>
+<topic id="24" parent="21" guid="GLcDq5LqCk-2pxxfqL5PeA" x="-257.52" y="2103.60" text="$_GET">
+<note>
+&lt;form action=&quot;index.php&quot; method=&quot;get&quot;&gt;    &lt;input type=&quot;text&quot; name=&quot;dulieu&quot;&gt;    &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;&lt;?php    echo $_GET[&apos;dulieu&apos;];?&gt;
+</note>
+</topic>
+<topic id="25" parent="21" guid="sQXI73meJE2Whwr7cTdyhg" x="-141.02" y="2148.16" text="$_REQUEST có thể dùng cho cả post và get">
+<note>
+&lt;form action=&quot;index.php&quot; method=&quot;post&quot;&gt;    &lt;input type=&quot;text&quot; name=&quot;dulieu&quot;&gt;    &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;&lt;?php    echo $_REQUEST[&apos;dulieu&apos;];?&gt;// hoặc&lt;form action=&quot;index.php&quot; method=&quot;get&quot;&gt;    &lt;input type=&quot;text&quot; name=&quot;dulieu&quot;&gt;    &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;&lt;?php    echo $_REQUEST[&apos;dulieu&apos;];?&gt;
+</note>
+</topic>
+<topic id="26" parent="1" guid="GmcEt2ClbUK5cSZlWW3wLA" x="-282.52" y="2192.72" text="Gộp file"/>
+<topic id="27" parent="26" guid="MhpHbBhElUaQsR41tsTJiQ" x="-108.02" y="2237.28" text="require và require_once khi gặp lỗi sẽ ngừng thực thi">
+<note>
+&lt;?php    require &quot;xuly.php&quot;;    require_once &quot;xuly.php&quot;;?&gt;
+</note>
+</topic>
+<topic id="28" parent="26" guid="jNsaeJ-YzEOqjAE2UOpGVg" x="-75.02" y="2281.84" text="include và include_once khi gặp lỗi vẫn chạy, chỉ trả về vị trí lỗi">
+<note>
+&lt;?php    include &quot;xuly.php&quot;;    include_once &quot;xuly.php&quot;;?&gt;
+</note>
+</topic>
+<topic id="29" parent="1" guid="mzlU1UscgEG_cMqOCuqckQ" x="-237.02" y="2326.40" text="Tạo thời gian với date">
+<note>
+&lt;?php  $date = date(&apos;d/m/Y&apos;);  echo $date;  echo &quot;&lt;br&gt;&quot;;  $date2 = date(&apos;d/m/Y H:i:sa&apos;); // H là giờ, i là phút, s là giây, a là sáng (am)  echo($date2);?&gt;
+</note>
+</topic>
+<topic id="30" parent="0" guid="YNuQDQLZdE6CFvVQAuUlJw" x="215.54" y="1060.61" palette="8" colorinfo="8" text="Form html"/>
+<topic id="31" parent="30" guid="PO6uvjHT1U6yxZ-Y1rshfA" x="255.34" y="1107.28" text="Code form html">
+<note>
+&lt;form action=&quot;index.php&quot; method=&quot;get&quot; name=&quot;form&quot;&gt;  &lt;label&gt;User name&lt;/label&gt;  &lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;  &lt;br&gt;  &lt;label&gt;Password&lt;/label&gt;  &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;  &lt;br&gt;  &lt;label&gt;Birthday&lt;/label&gt;  &lt;input type=&quot;date&quot;&gt;  &lt;br&gt;  &lt;label&gt;Sex&lt;/label&gt;  &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;male&quot;&gt; Male  &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;female&quot;&gt; Female  &lt;br&gt;  &lt;label&gt;Do you agree?&lt;/label&gt;  &lt;input type=&quot;checkbox&quot; name=&quot;agree&quot; value=&quot;yes&quot;&gt; Yes  &lt;br&gt;  &lt;label&gt;Nation&lt;/label&gt;  &lt;select name=&quot;nation&quot;&gt;    &lt;option value=&quot;vietnamese&quot;&gt;Vietnamese&lt;/option&gt;    &lt;option value=&quot;chinese&quot;&gt;Chinese&lt;/option&gt;    &lt;option value=&quot;japanese&quot;&gt;Japanese&lt;/option&gt;  &lt;/select&gt;  &lt;br&gt;  &lt;label&gt;Comment&lt;/label&gt;  &lt;textarea name=&quot;comment&quot;&gt;your comment...&lt;/textarea&gt;  &lt;br&gt;  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;
+</note>
+</topic>
+<topic id="32" parent="30" guid="zzh0Qm2QZEqlSgTskRh3oQ" x="267.34" y="1151.84" text="Lấy dữ liệu từ form"/>
+<topic id="33" parent="32" x="256.34" y="1196.40" text="$_GET"/>
+<topic id="34" parent="32" x="261.34" y="1240.96" text="$_POST"/>
+<topic id="35" parent="30" guid="LqJmTjVI40OHWDZVIyHceA" x="252.84" y="1285.52" text="Điều kiện form">
+<note>
+&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;title&gt;Document&lt;/title&gt;    &lt;style&gt;        .error {            color: red;        }    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;    &lt;?php    $nameError = &quot;&quot;;    $name = &quot;&quot;;    if ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {      if (empty($_POST[&apos;name&apos;])) {        $nameError = &quot;Không được để trống&quot;;      } else {        $name = $_POST[&apos;name&apos;];        if (!preg_match(&quot;/^[a-zA-Z-&apos; ]*$/&quot;, $name)) {          $nameError = &quot;Không được nhập kí tự đặc biệt&quot;;        } else {          echo $name;        }      }    }    ?&gt;    &lt;form action=&quot;index.php&quot; method=&quot;post&quot;&gt;        Tên: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;        &lt;span class=&quot;error&quot;&gt;&lt;?php echo $nameError; ?&gt;&lt;/span&gt;        &lt;br&gt;        &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;    &lt;/form&gt;&lt;/body&gt;&lt;/html&gt;
+</note>
+</topic>
+<topic id="36" parent="30" guid="sF_qqId0tEeLysS2bqHb9g" x="270.34" y="1330.08" text="Chức năng tìm kiếm">
+<note>
+&lt;?phpif ($_SERVER[&quot;REQUEST_METHOD&quot;] == &quot;POST&quot;) {  $name = $_POST[&quot;name&quot;];  if ($name == &quot;Linh&quot;) {    echo &quot;Xin chào &quot; . $name . &quot; sinh năm 2002&quot;;  } else if ($name == &quot;Đông&quot;) {    echo &quot;Xin chào &quot; . $name . &quot; sinh năm 2015&quot;;  } else {    echo &quot;Tôi đéo biết bạn&quot;;  }}?&gt;&lt;form action=&quot;index.php&quot; method=&quot;post&quot;&gt;  Tên: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;  &lt;br&gt;  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;
+</note>
+</topic>
+<topic id="37" parent="30" guid="pBh_wB06uE60XVetsp5BgQ" x="269.84" y="1374.64" text="Bắt sự kiện với isset">
+<note>
+&lt;?php  if(isset($_POST[&apos;submit&apos;])) {    $name = $_POST[&apos;name&apos;];    echo $name;  }?&gt;&lt;form action=&quot;index.php&quot; method=&quot;post&quot;&gt;  Tên: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;  &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;
+</note>
+</topic>
+<topic id="38" parent="0" guid="zPBGhSdyi0ya6ezaCJhP8A" x="443.89" y="1060.61" palette="2" colorinfo="2" text="Thao tác với file"/>
+<topic id="39" parent="38" guid="f2iVQpaKOEO6EAhviCTHJA" x="437.19" y="1107.28" text="Đọc file"/>
+<topic id="40" parent="39" guid="pGMipPGlQkeKfxTEoAUakQ" x="466.19" y="1151.84" text="Cơ bản">
+<note>
+&lt;?php  // đọc nội dung từ file   echo readfile(&quot;files/file1.txt&quot;);?&gt;
+</note>
+</topic>
+<topic id="41" parent="39" guid="geu2zaEvqUiidhN9ky4JRQ" x="473.19" y="1196.40" text="Nâng cao">
+<note>
+&lt;?php$myFile = fopen(&quot;files/file1.txt&quot;, &quot;r&quot;) or die(&quot;lỗi&quot;); // mở file// $fileContent = fread($myFile, filesize(&quot;files/file1.txt&quot;)); // đọc file$fileContent = fgets($myFile); // đọc 1 dòng đầu tiênecho $fileContent;fclose($myFile); // đóng file khi hoàn chỉnh?&gt;
+</note>
+</topic>
+<topic id="42" parent="38" guid="fLLH1qKj0UWne9VlB6zz9A" x="465.69" y="1240.96" text="Vòng lặp với file">
+<note>
+&lt;?php$myFile = fopen(&quot;files/file1.txt&quot;, &quot;r&quot;) or die(&quot;lỗi&quot;); // mở filewhile (!feof($myFile)) {  echo fgets($myFile) . &quot;&lt;br&gt;&quot;;}fclose($myFile); // đóng file khi hoàn chỉnh?&gt;
+</note>
+</topic>
+<topic id="43" parent="38" guid="W7N1d6JTO0-D5KzfABfo2Q" x="437.19" y="1285.52" text="Tạo file">
+<note>
+&lt;?php$myFile = fopen(&quot;files/file2.txt&quot;, &quot;w&quot;) or die(&quot;lỗi&quot;); // tạo file, sau đó làm mới lại trang web để nó chạy?&gt;
+</note>
+</topic>
+<topic id="44" parent="38" guid="cvk1eruJlU6h9eRUd8sI-w" x="451.19" y="1330.08" text="Viết vào file">
+<note>
+&lt;?php$myFile = fopen(&quot;files/file2.txt&quot;, &quot;a&quot;) or die(&quot;lỗi&quot;); // mở file$data = &quot;Hello world!&quot;;fwrite($myFile, $data);fclose($myFile);?&gt;
+</note>
+</topic>
+<topic id="45" parent="38" guid="W-HHgDd7lkaFhUFdFAWCfA" x="461.19" y="1374.64" text="Viết đè vào file">
+<note>
+&lt;?php$myFile = fopen(&quot;files/file2.txt&quot;, &quot;w&quot;) or die(&quot;lỗi&quot;); // mở file$data = &quot;Viết đè vào file nè&quot;;fwrite($myFile, $data);fclose($myFile);?&gt;
+</note>
+</topic>
+<topic id="46" parent="38" guid="8pG0ZCrWtEmkt2l7e25oVg" x="447.69" y="1419.20" text="Upload file"/>
+<topic id="47" parent="46" guid="j2PUcaWA8k662stITLrNsg" x="466.19" y="1463.76" text="Cơ bản">
+<note>
+&lt;form action=&quot;index.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;  &lt;input type=&quot;file&quot; name=&quot;hinhanh&quot; value=&quot;Chọn tệp&quot;&gt;  &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;&lt;?php    if(isset($_FILES[&quot;hinhanh&quot;])) {        print_r($_FILES[&quot;hinhanh&quot;]);    }?&gt;
+</note>
+</topic>
+<topic id="48" parent="46" guid="oNvL24nYpkSaA8DwjgCnLw" x="517.69" y="1508.32" text="Upload file lên thư mục">
+<note>
+// Code trong file index.php&lt;form action=&quot;xuly.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;  &lt;input type=&quot;file&quot; name=&quot;hinhanh&quot; value=&quot;Chọn tệp&quot;&gt;  &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;// Code trong file xuly.php&lt;?phpif (isset($_POST[&quot;btn&quot;])) {  if (isset($_FILES[&quot;hinhanh&quot;])) {    if ($_FILES[&quot;hinhanh&quot;][&quot;size&quot;] == 0) {      echo &quot;Bạn chưa chọn file&quot;;    }else {      // chuyển file vào thư mục      move_uploaded_file($_FILES[&quot;hinhanh&quot;][&quot;tmp_name&quot;], &quot;files/&quot; . $_FILES[&quot;hinhanh&quot;][&quot;name&quot;]);      echo &quot;Up file thành công&quot;;    }  } else {    echo &quot;Upload file bị lỗi&quot;;  }}?&gt;
+</note>
+</topic>
+<topic id="49" parent="46" guid="TK9SlurofUuMUMp2GvlJbw" x="506.69" y="1552.88" text="Giới hạn upload file">
+<note>
+// Code trong file index.php&lt;form action=&quot;xuly.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;  &lt;input type=&quot;file&quot; name=&quot;hinhanh&quot; value=&quot;Chọn tệp&quot;&gt;  &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;// Code trong file xuly.php&lt;?phpif (isset($_POST[&quot;btn&quot;])) {  if (isset($_FILES[&quot;hinhanh&quot;])) {    if ($_FILES[&quot;hinhanh&quot;][&quot;size&quot;] == 0) {      echo &quot;Bạn chưa chọn file&quot;;    } else if ($_FILES[&quot;hinhanh&quot;][&quot;size&quot;] &gt; 2000000) {      // 2000000 tương đương với 2Mb      echo &quot;File quá dung lượng&quot;;    } else {      // chuyển file vào thư mục      move_uploaded_file($_FILES[&quot;hinhanh&quot;][&quot;tmp_name&quot;], &quot;files/&quot; . $_FILES[&quot;hinhanh&quot;][&quot;name&quot;]);      echo &quot;Up file thành công&quot;;    }  } else {    echo &quot;Upload file bị lỗi&quot;;  }}?&gt;
+</note>
+</topic>
+<topic id="50" parent="46" guid="Cw-toC-jY0q1CyDxKQqyeQ" x="509.69" y="1597.44" text="Upload file đã tồn tại">
+<note>
+// Code trong file index.php&lt;form action=&quot;xuly.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;  &lt;input type=&quot;file&quot; name=&quot;hinhanh&quot; value=&quot;Chọn tệp&quot;&gt;  &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Gửi&quot;&gt;&lt;/form&gt;&lt;?php$thumuc = &quot;files/&quot;; //Tên thư mục chứa file upload$bien = $thumuc.basename($_FILES[&quot;hinhanh&quot;][&quot;name&quot;]);//Lấy tên gốc của file uploadif (isset($_POST[&quot;btn&quot;])) {  if (isset($_FILES[&quot;hinhanh&quot;])) {    if ($_FILES[&quot;hinhanh&quot;][&quot;size&quot;] == 0) {      echo &quot;Bạn chưa chọn file&quot;;    } else if(file_exists(($bien))){      echo &quot;File đã tồn tại&quot;;    } else if ($_FILES[&quot;hinhanh&quot;][&quot;size&quot;] &gt; 20) {      echo &quot;File quá dung lượng&quot;;    } else {      // chuyển file vào thư mục      move_uploaded_file($_FILES[&quot;hinhanh&quot;][&quot;tmp_name&quot;], &quot;files/&quot; . $_FILES[&quot;hinhanh&quot;][&quot;name&quot;]);      echo &quot;Up file thành công&quot;;    }  } else {    echo &quot;Upload file bị lỗi&quot;;  }}?&gt;
+</note>
+</topic>
+<topic id="51" parent="0" guid="MWv4eiYgLUy8yM6ci_IHyg" x="717.75" y="1060.61" palette="3" colorinfo="3" text="Thao tác với Cookie">
+<note>
+&lt;?php  // Thêm cookie  $cookieName = &quot;user&quot;;  $cookieValue = &quot;Linh&quot;;  setcookie($cookieName, $cookieValue, time() + (86400 * 30), &quot;/&quot;); // 86400 = 1 day  if(isset($_COOKIE[$cookieName])) {    echo &quot;Cookie &apos;&quot; . $cookieName . &quot;&apos;đã tồn tại!&lt;br&gt;&quot;;    echo &quot;Value is: &quot; . $_COOKIE[$cookieName];  } else {    echo &quot;Cookie &apos;&quot; . $cookieName . &quot;&apos; đã chết&quot;;  }  // Sửa cookie  $new_value = &quot;New Value&quot;;  setcookie($cookieName, $new_value, time() + (86400 * 30), &quot;/&quot;);  // Xóa cookie  setcookie($cookieName, &quot;&quot;, time() - (86400*30), &quot;/&quot;);  if(!isset($_COOKIE[$cookieName])) {    echo &quot;Cookie &apos;&quot; . $cookieName . &quot;&apos; đã được xóa&quot;;  }?&gt;
+</note>
+</topic>
+<topic id="52" parent="51" guid="ZfS0HinaFESxRpEiHa534w" x="706.04" y="1107.28" text="Tạo cookie">
+<note>
+&lt;?php  $cookieName = &quot;user&quot;;  $cookieValue = &quot;Linh&quot;;  setcookie($cookieName, $cookieValue, time() + (86400 * 30), &quot;/&quot;); // 86400 = 1 day  if(isset($_COOKIE[$cookieName])) {    echo &quot;Cookie &apos;&quot; . $cookieName . &quot;&apos;đã tồn tại!&lt;br&gt;&quot;;    echo &quot;Value is: &quot; . $_COOKIE[$cookieName];  } else {    echo &quot;Cookie &apos;&quot; . $cookieName . &quot;&apos; đã chết&quot;;  }?&gt;
+</note>
+</topic>
+<topic id="53" parent="51" guid="2gYZm0Yt_0OtSwsY0N-J4w" x="707.04" y="1151.84" text="Sửa cookie">
+<note>
+// Sửa cookie  $new_value = &quot;New Value&quot;;  setcookie($cookieName, $new_value, time() + (86400 * 30), &quot;/&quot;);
+</note>
+</topic>
+<topic id="54" parent="51" guid="734YtDG7d02GLuafz-CGng" x="706.54" y="1196.40" text="Xóa cookie">
+<note>
+// Xóa cookie  setcookie($cookieName, &quot;&quot;, time() - (86400*30), &quot;/&quot;);  if(!isset($_COOKIE[$cookieName])) {    echo &quot;Cookie &apos;&quot; . $cookieName . &quot;&apos; đã được xóa&quot;;  }
+</note>
+</topic>
+<topic id="55" parent="0" guid="VQ73feV5PEuhJYFP4YoVfQ" x="924.01" y="1060.61" palette="5" colorinfo="5" text="Thao tác với Session">
+<note>
+&lt;?php session_start(); // Phải khai báo nếu muốn thao tác với session  // Tạo session trong PHP  $name = &quot;Hà Văn Linh&quot;;  $_SESSION[&apos;name&apos;] = $name;  // Hiển thị session  echo $_SESSION[&apos;name&apos;];  // Sửa session trong PHP  $newValue = &quot;new value&quot;;  $_SESSION[&apos;name&apos;] = $newValue;  // Xóa 1 session trong PHP  session_start();  unset($_SESSION[&apos;name&apos;]);  // Xóa tất cả session trong PHP  session_destroy();?&gt;
+</note>
+</topic>
+<topic id="56" parent="55" guid="sUoaK0M4ykehF4kprM5TnQ" x="910.31" y="1107.28" text="Tạo session">
+<note>
+&lt;?php  // Tạo session trong PHP  session_start();  $name = &quot;Nguyễn Thi Nguyễn&quot;;  $_SESSION[&apos;name&apos;] = $name;?&gt;
+</note>
+</topic>
+<topic id="57" parent="55" guid="1xnKgruLg0Gb2TDOOiAqGg" x="922.81" y="1151.84" text="Hiển thị session">
+<note>
+&lt;?php  // Hiển thị session  session_start();  // echo $_SESSION[&apos;name&apos;];?&gt;
+</note>
+</topic>
+<topic id="58" parent="55" guid="MQ-OSz2iv0i14GNJYMR3Og" x="911.31" y="1196.40" text="Sửa session">
+<note>
+// Sửa session trong PHP  session_start();  $newValue = &quot;new value&quot;;  $_SESSION[&apos;name&apos;] = $newValue;
+</note>
+</topic>
+<topic id="59" parent="55" guid="M0zjgN24SUa5st_NzRlb0Q" x="910.81" y="1240.96" text="Xóa session"/>
+<topic id="60" parent="59" guid="sAVv2GFyvkibIx1wAZvwWQ" x="946.31" y="1285.52" text="Xóa 1 session">
+<note>
+// Xóa 1 session trong PHP  session_start();  unset($_SESSION[&apos;name&apos;]);
+</note>
+</topic>
+<topic id="61" parent="59" guid="hcUtsJPJdkCfiEqatzPIvQ" x="960.31" y="1330.08" text="Xóa tất cả session">
+<note>
+// Xóa tất cả session trong PHP  session_start();  session_destroy();
+</note>
+</topic>
+<topic id="62" parent="0" guid="e4guGiRkbUyGJ0gWTDLmnA" x="1137.36" y="1060.61" palette="4" colorinfo="4" text="Thao tác với chuỗi"/>
+<topic id="63" parent="62" guid="ZvbGF5ucokWreE0j01enwg" x="1191.16" y="1107.28" text="Các thao tác cơ bản với chuỗi">
+<note>
+&lt;?php$ten = &quot;Ha Van Linh&quot;;echo strlen($ten) . &quot;&lt;br&gt;&quot;; // đo độ dài chuỗiecho str_word_count($ten) . &quot;&lt;br&gt;&quot;; // đếm số từecho strrev($ten) . &quot;&lt;br&gt;&quot;; // đảo ngược chuỗiecho strpos($ten, &quot;Ha&quot;) . &quot;&lt;br&gt;&quot;; // tìm vị tríecho str_replace(&quot;Ha&quot;, &quot;Nguyen&quot;, $ten) . &quot;&lt;br&gt;&quot;; // thay thếecho ucfirst($ten) . &quot;&lt;br&gt;&quot;; // chữ đầu tiên in hoaecho lcfirst($ten) . &quot;&lt;br&gt;&quot;; // chữ đầu tiên in thường?&gt;
+</note>
+</topic>
+<topic id="64" parent="62" guid="xwB_qRy4vE6CXjEaRs5VBQ" x="1126.16" y="1151.84" text="Nối chuỗi">
+<note>
+$a = &quot;Xin chao&quot;;$b = &quot;Linh&quot;;echo $a . $b;
+</note>
+</topic>
+<topic id="65" parent="0" guid="p80BZrBFLUe42PFLI0Dzhw" x="1396.72" y="1060.61" palette="2" colorinfo="2" text="Các thao tác lọc"/>
+<topic id="66" parent="65" guid="6DqMUIrUpUyH1oJ3i3sl3g" x="1396.01" y="1107.28" text="Lọc chuỗi">
+<note>
+&lt;?php  // Lọc chuỗi trong php  $name = &quot; Van Linh&quot;;  $locchuoi = filter_var($name, FILTER_SANITIZE_STRING);  echo $locchuoi;?&gt;
+</note>
+</topic>
+<topic id="67" parent="65" guid="LnMj6KkEkUG5rJIVX5Cdng" x="1411.01" y="1151.84" text="Lọc số nguyên">
+<note>
+&lt;?php  // Lọc số nguyên  $songuyen = 18052002;  if(!filter_var($songuyen, FILTER_VALIDATE_INT)){    echo &quot;Không phải số nguyên&quot;;  } else {    echo &quot;Đây là số nguyên&quot;;  }?&gt;
+</note>
+</topic>
+<topic id="68" parent="65" guid="jiPxJmH-O0eVKh7bXEvflw" x="1385.01" y="1196.40" text="Lọc IP">
+<note>
+&lt;?php  // Lọc ip  $ip = &quot;127.0.0.1&quot;;  if (!filter_var($ip, FILTER_VALIDATE_IP)) {    echo &quot;IP không hợp lệ&quot;;  } else {    echo &quot;IP hợp lệ&quot;;  }?&gt;
+</note>
+</topic>
+<topic id="69" parent="65" guid="hCRXt9YwXEC5PdfQEdUb0w" x="1396.51" y="1240.96" text="Lọc email">
+<note>
+&lt;?php  // Lọc email  $email = &quot;example@gmail.com&quot;;  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {    echo &quot;Email không hợp lệ&quot;;  } else {    echo &quot;Email hợp lệ&quot;;  }?&gt;
+</note>
+</topic>
+<topic id="70" parent="65" guid="qIY-dc5sr0-af5Apm_bD7Q" x="1387.01" y="1285.52" text="Lọc url">
+<note>
+&lt;?php  // Lọc URL  $url = &quot;https://www.google.com&quot;;  if (!filter_var($url, FILTER_VALIDATE_URL)) {    echo &quot;URL không hợp lệ&quot;;  } else {    echo &quot;URL hợp lệ&quot;;  }?&gt;
+</note>
+</topic>
+<topic id="71" parent="0" guid="wLWpbQfU-UGrU05oeOrR8w" x="1562.48" y="1060.61" palette="6" colorinfo="6" text="Viết hàm riêng">
+<note>
+// Code trong file function.php&lt;?php  // Tạo hàm phép cộng  function cong($a, $b)  {    return $a + $b;  }?&gt;// Code trong file index.php&lt;?php  include(&quot;function.php&quot;);  echo cong(2,3);?&gt;
+</note>
+</topic>
+<topic id="72" parent="0" guid="ULo57kKH2UmkI9kAWoArOA" x="1731.24" y="1060.61" palette="7" colorinfo="7" text="Code chức năng"/>
+<topic id="73" parent="72" guid="MmtJdaDfOkWkpLE4u94WOA" x="1750.54" y="1107.28" text="Trang đăng nhập">
+<note>
+&lt;form action=&quot;login.php&quot; method=&quot;post&quot;&gt;    &lt;label&gt;Email&lt;/label&gt;    &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;    &lt;br&gt;&lt;br&gt;    &lt;label&gt;Password&lt;/label&gt;    &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;    &lt;br&gt;&lt;br&gt;    &lt;button type=&quot;submit&quot; name=&quot;login&quot;&gt;Login&lt;/button&gt;&lt;/form&gt;&lt;?php    session_start();    if(isset($_SESSION[&apos;email&apos;])) {        header(&apos;Location: admin.php&apos;);    }    if(isset($_POST[&apos;login&apos;])) {        $email = $_POST[&apos;email&apos;];        $password = $_POST[&apos;password&apos;];        if($email == &apos;admin@gmail.com&apos; &amp;&amp; $password == &apos;123456&apos;) {            $_SESSION[&apos;email&apos;] = $email;            header(&apos;Location: admin.php&apos;);        }else {            echo &quot;Sai tài khoản admin&quot;;        }    }?&gt;
+</note>
+</topic>
+<topic id="74" parent="72" guid="GLCM-xurXke3SFOpuSj0ZQ" x="1739.04" y="1151.84" text="Trang Admin ">
+<note>
+&lt;h1&gt;Đây là trang admin&lt;/h1&gt;&lt;?php  session_start();  // unset($_SESSION[&apos;email&apos;]);  if(!isset($_SESSION[&apos;email&apos;])) {    header(&apos;Location: login.php&apos;);  }?&gt;&lt;a href=&quot;logout.php&quot;&gt;  &lt;button type=&quot;submit&quot; name=&quot;logout&quot;&gt;Đăng xuất&lt;/button&gt;&lt;/a&gt;
+</note>
+</topic>
+<topic id="75" parent="72" guid="ZQaqNEMgmkS03hCRQPSPCA" x="1748.54" y="1196.40" text="Trang đăng xuất">
+<note>
+&lt;?php  session_start();  if(isset($_SESSION[&apos;email&apos;])) {    unset($_SESSION[&apos;email&apos;]);  }  header(&apos;Location: login.php&apos;);?&gt;
+</note>
+</topic>
+<topic id="76" parent="72" guid="OfNr5O5CK0mu-bJ3tLXnJA" x="1734.54" y="1240.96" text="Page layout"/>
+<topic id="77" parent="76" guid="3NoVry0H0E6RJI2XAmEd2Q" x="1758.54" y="1285.52" text="index.php">
+<note>
+&lt;ul&gt;    &lt;li&gt;&lt;a href=&quot;index.php?page_layout=home&quot;&gt;Trang chủ&lt;/a&gt;&lt;/li&gt;    &lt;li&gt;&lt;a href=&quot;index.php?page_layout=product&quot;&gt;Sản phẩm&lt;/a&gt;&lt;/li&gt;    &lt;li&gt;&lt;a href=&quot;index.php?page_layout=contact&quot;&gt;Liên hệ&lt;/a&gt;&lt;/li&gt;    &lt;li&gt;&lt;a href=&quot;index.php?page_layout=cart&quot;&gt;Giỏ hàng&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;?php    if (isset($_GET[&apos;page_layout&apos;])) {        switch ($_GET[&apos;page_layout&apos;]) {            case &apos;home&apos;:                include (&apos;home.php&apos;);                break;            case &apos;product&apos;:                include (&apos;product.php&apos;);                break;            case &apos;contact&apos;:                include (&apos;contact.php&apos;);                break;            case &apos;cart&apos;:                include (&apos;cart.php&apos;);                break;        }    } else {        include_once (&apos;home.php&apos;);    }?&gt;
+</note>
+</topic>
+<topic id="78" parent="76" guid="43-XRjMz4Ui8xiMZcyuIIw" x="1758.54" y="1330.08" text="home.php">
+<note>
+&lt;h1&gt;Đây là trang chủ&lt;/h1&gt;
+</note>
+</topic>
+<topic id="79" parent="76" guid="hG10V9ZvCka0h0Rv1EnGtw" x="1763.54" y="1374.64" text="contact.php">
+<note>
+&lt;h1&gt;Đây là trang liên hệ&lt;/h1&gt;
+</note>
+</topic>
+<topic id="80" parent="76" guid="KrBkou7hJ025Pl-uaEZzpw" x="1764.54" y="1419.20" text="product.php">
+<note>
+&lt;h1&gt;Đây là trang sản phẩm&lt;/h1&gt;
+</note>
+</topic>
+<topic id="81" parent="76" guid="EF6v743BR06XHVUCJ_f0VA" x="1752.54" y="1463.76" text="cart.php">
+<note>
+&lt;h1&gt;Đây là trang giỏ hàng&lt;/h1&gt;
+</note>
+</topic>
+<topic id="82" parent="0" guid="3TaNXiWX60qJ0MAWmiO5jA" x="1883.60" y="1060.61" palette="2" colorinfo="2" text="MySQL "/>
+<topic id="83" parent="82" guid="4CJ5cC6QpkCnV-Do19u8Pg" x="1907.89" y="1107.28" text="MySQLi">
+<note>
+Kết nối cơ sở dữ liệu MySQL
+</note>
+</topic>
+<topic id="84" parent="82" guid="e1RHAMmFTkCqS_vxqnkieQ" x="1919.89" y="1151.84" text="MySQLPDO">
+<note>
+Kết nối với 12 hệ quản trị cơ sở dữ liệu khác nhau
+</note>
+</topic>
+<topic id="85" parent="82" guid="0yy6zDsmsUaCvwTgJENfnQ" x="1926.39" y="1196.40" text="Tạo database"/>
+<topic id="86" parent="85" x="1989.39" y="1248.96" text="Thao tác trên bằng giao\Ndiện người dùng"/>
+<topic id="87" parent="85" guid="vBL8QOvHukiMWLuwG6323w" x="1976.39" y="1301.52" text="Thao tác bằng code">
+<note>
+&lt;?php     // Kết nối database    include_once &quot;connect.php&quot;;    // Tạo database    $sql = &quot;CREATE DATABASE IF NOT EXISTS pyramidGame&quot;;    //Thực thi truy vấn    if (mysqli_query($conn, $sql)) {        echo &quot;Tạo database thành công&quot;;    } else {        echo &quot;Tạo database thất bại: &quot; . $conn-&gt;error;    }?&gt;
+</note>
+</topic>
+<topic id="88" parent="82" guid="Cq5M4zaHUkmNArBp3shadg" x="1936.89" y="1346.08" text="Kết nối database">
+<note>
+&lt;?php    // Kết nối với database    $servername = &quot;localhost&quot;;    $username = &quot;root&quot;;    $password = &quot;&quot;;    $dbname = &quot;myWeb&quot;;    // Tạo kết nối    $conn = new mysqli($servername, $username, $password, $dbname);    // Kiểm tra kết nối    if ($conn) {        mysqli_query($conn, &quot;SET NAMES &apos;utf8&apos;&quot;);        echo &quot;Kết nối thành công&quot;;    } else {        echo &quot;Kết nối thất bại&quot;;    }?&gt;
+</note>
+</topic>
+<topic id="89" parent="82" guid="3caROpVpf0S_0HY7h2snkQ" x="1913.39" y="1390.64" text="Tạo bảng">
+<note>
+// Tạo bảng    $sql = &quot;CREATE TABLE IF NOT EXISTS persons (        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,        email VARCHAR(30) NOT NULL,        password VARCHAR(50) NOT NULL,        level INT(6) NOT NULL    )&quot;;    // Thực thi truy vấn    if($conn-&gt;query($sql)) {        echo &quot;Bảng đã được tạo&quot;;    } else {        echo &quot;Không thể tạo bảng: &quot; . $conn-&gt;error;    }
+</note>
+</topic>
+<topic id="90" parent="82" guid="kY2ydm3inE-lXSj_Rwp0Ug" x="1957.39" y="1435.20" text="Thêm dữ liệu vào bảng">
+<note>
+// Thêm dữ liệu    $sql = &quot;INSERT INTO persons (email, password, level) VALUES (&apos;linh@gmail.com&apos;, &apos;123456&apos;, 1)&quot;;        // Thực thi truy vấn    if($conn-&gt;query($sql)) {        echo &quot;Dữ liệu đã được thêm&quot;;    } else {        echo &quot;Không thể thêm dữ liệu: &quot; . $conn-&gt;error;    }
+</note>
+</topic>
+<topic id="91" parent="82" guid="-b1qC539XEKSnlY_OPRqjg" x="1919.39" y="1479.76" text="Lấy dữ liệu">
+<note>
+&lt;?php    // Kết nối database    include_once &quot;connect.php&quot;;    // Lấy dữ liệu    $sql = &quot;SELECT * FROM persons&quot;;    $result = mysqli_query($conn, $sql);    if ($result) {        echo mysqli_num_rows($result) . &quot; kết quả&lt;br&gt;&quot;; // Số lượng hàng trong bảng        while ($row = mysqli_fetch_assoc($result)) {            echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;] . &quot;&lt;br&gt;&quot;;        }    } else {        echo &quot;Không thể truy vấn: &quot; . $conn-&gt;error;    }?&gt;
+</note>
+</topic>
+<topic id="92" parent="82" guid="4TcC5NK1xkSIakD5x3s0Fg" x="1920.39" y="1524.32" text="Xóa dữ liệu">
+<note>
+&lt;?php    // Kết nối database    include_once &quot;connect.php&quot;;    // Xóa một dòng dữ liệu có id bằng 2    $sql = &quot;DELETE FROM persons WHERE id = 2&quot;;    // Thực thi truy vấn    if ($conn-&gt;query($sql)) {        echo &quot;Dữ liệu đã được xóa&quot;;    } else {        echo &quot;Không thể xóa dữ liệu: &quot; . $conn-&gt;error;    }?&gt;
+</note>
+</topic>
+<topic id="93" parent="82" guid="67zjlpKvVUCKm2ugIZASew" x="1920.89" y="1568.88" text="Sửa dữ liệu">
+<note>
+&lt;?php    // Kết nối database    include_once &quot;connect.php&quot;;    // Sửa password dòng dữ liệu có id = 3 bằng update trong bảng persons trong database    $sql = &quot;UPDATE persons SET password = &apos;123456&apos; WHERE id = 3&quot;;    // Thực thi truy vấn SQLs    if ($conn-&gt;query($sql)) {        echo &quot;Sửa thành công&quot;;    } else {        echo &quot;Sửa thất bại: &quot; . $conn-&gt;error;    }    ?&gt;
+</note>
+</topic>
+<topic id="94" parent="82" guid="3Cy19XxdP0mITdEC5WnXuA" x="1931.89" y="1613.44" text="Chèn thẻ HTML">
+<note>
+&lt;?php    // Kết nối database    include_once &quot;connect.php&quot;;    // Chèn thẻ html vào MySQL    $sql = &quot;SELECT * FROM persons&quot;;    // Thực thi truy vấn    $result = mysqli_query($conn, $sql);    while ($row = mysqli_fetch_assoc($result)) {?&gt;    &lt;h1&gt;&lt;?php echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;]; ?&gt;&lt;/h1&gt;    &lt;br&gt;    &lt;hr&gt;&lt;?php } ?&gt;
+</note>
+</topic>
+<topic id="95" parent="82" guid="Dyg2hOaEeUabM3B6zMRppg" x="1927.89" y="1658.00" text="Lấy ID dữ liệu">
+<note>
+// Code trong file user.php&lt;?phpinclude &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons&quot;;$result = mysqli_query($conn, $sql);while ($row = mysqli_fetch_assoc($result)) {    ?&gt;    &lt;tr&gt;        &lt;td&gt;            &lt;?php            echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];            ?&gt;            &lt;span&gt;&lt;a href=&quot;edit.php?this_id=&lt;?php echo $row[&quot;id&quot;] ?&gt;&quot;&gt;Sửa&lt;/a&gt;&lt;/span&gt;            &lt;span&gt;&lt;a href=&quot;&quot;&gt;Xóa&lt;/a&gt;&lt;/span&gt;            &lt;?php echo &quot;&lt;br&gt;&quot; ?&gt;        &lt;/td&gt;    &lt;/tr&gt;&lt;?php } ?&gt;// Code trong file edit.php&lt;?php    include &quot;connect.php&quot;;    $id = $_GET[&quot;this_id&quot;];    echo $id;?&gt;
+</note>
+</topic>
+<topic id="96" parent="82" guid="gysHXl2e7kiZdP9xb7Cy2Q" x="1937.39" y="1702.56" text="Câu lệnh WHERE">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons WHERE id = 3&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result)&gt;0){    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="97" parent="82" guid="QlmpUeIvVU-v1_UQGjsG1A" x="1927.39" y="1747.12" text="Câu lệnh AND">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons WHERE email = &apos;linh@gmail.com&apos; AND id = 5&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result) &gt; 0) {    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="98" parent="82" guid="ahaorxaey0qTRSz0eexjZQ" x="1923.39" y="1791.68" text="Câu lệnh OR">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons WHERE email = &apos;linh@gmail.com&apos; OR id = 100&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result) &gt; 0) {    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="99" parent="82" guid="6VihrpKmck-TwlWJyXZ8mA" x="1928.39" y="1836.24" text="Câu lệnh LIKE">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons WHERE email LIKE &apos;%li%&apos;&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result) &gt; 0) {    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="100" parent="82" guid="Kghw2B9qzUOkfVIJRGLdjw" x="1946.89" y="1880.80" text="Câu lệnh ORDER BY">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons ORDER BY id DESC&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result) &gt; 0) {    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="101" parent="82" guid="9oxa8OJcGUSt3aRl_fCZ7Q" x="1931.39" y="1925.36" text="Câu lệnh LIMIT">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons LIMIT 1,2&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result) &gt; 0) {    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="102" parent="82" guid="e22R0uutC0W6CKS-q24s1g" x="1931.89" y="1969.92" text="Câu lệnh RAND">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT * FROM persons ORDER BY RAND()&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result) &gt; 0) {    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;password&quot;] . &quot;|&quot; . $row[&quot;level&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="103" parent="82" guid="iJTr4BidrUunIT12W3JEyA" x="1950.39" y="2014.48" text="Câu lệnh INNER JOIN">
+<note>
+&lt;?php// Kết nối databaseinclude_once &quot;connect.php&quot;;$sql = &quot;SELECT P.id, P.email, P.level, PD.name, PD.sex         FROM persons P INNER JOIN persondetails PD ON P.id = PD.id        ORDER BY P.id DESC&quot;;$result = mysqli_query($conn, $sql);if (mysqli_num_rows($result) &gt; 0) {    while ($row = mysqli_fetch_assoc($result)) {        echo $row[&quot;id&quot;] . &quot;|&quot; . $row[&quot;email&quot;] . &quot;|&quot; . $row[&quot;level&quot;] . &quot;|&quot; . $row[&quot;name&quot;] . &quot;|&quot; . $row[&quot;sex&quot;];        echo &quot;&lt;br&gt;&quot;;    }}?&gt;
+</note>
+</topic>
+<topic id="104" parent="0" guid="Zzh8pDiGXUmMpwuxVccbjw" x="2167.95" y="1060.61" palette="2" colorinfo="2" text="PHP + MySQL"/>
+<topic id="105" parent="104" guid="fms-A3IKRU2C4vA4_hzZ2A" x="2171.24" y="1107.28" text="Truy vấn">
+<note>
+// Code trong file product.php&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;thead&gt;        &lt;tr&gt;            &lt;th&gt;Id----&lt;/th&gt;            &lt;th&gt;Tên sản phẩm----&lt;/th&gt;            &lt;th&gt;Hình ảnh----&lt;/th&gt;            &lt;th&gt;Giá----&lt;/th&gt;            &lt;th&gt;Bảo hành&lt;/th&gt;        &lt;/tr&gt;    &lt;/thead&gt;    &lt;tbody&gt;        &lt;?php        // Kết nối database        include &quot;connect.php&quot;;        $sql = &quot;SELECT * FROM products&quot;;        $result = mysqli_query($conn, $sql);        while ($row = mysqli_fetch_assoc($result)) {            ?&gt;            &lt;br&gt;            &lt;tr&gt;                &lt;td&gt;&lt;?php echo $row[&apos;id&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;name&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt; &lt;img width=&quot;30&quot; height=&quot;30&quot; src=&quot;images/products/&lt;?php echo $row[&apos;image&apos;] ?&gt;&quot; alt=&quot;&quot;&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;price&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;warranty&apos;] ?&gt;&lt;/td&gt;            &lt;/tr&gt;        &lt;?php } ?&gt;    &lt;/tbody&gt;&lt;/body&gt;&lt;/html&gt;
+</note>
+</topic>
+<topic id="106" parent="104" guid="LApj-YEgw0qjcu6zneZCLg" x="2186.74" y="1151.84" text="Thêm dữ liệu">
+<note>
+// Code trong file product.php&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;thead&gt;        &lt;tr&gt;            &lt;th&gt;Id----&lt;/th&gt;            &lt;th&gt;Tên sản phẩm----&lt;/th&gt;            &lt;th&gt;Hình ảnh----&lt;/th&gt;            &lt;th&gt;Giá----&lt;/th&gt;            &lt;th&gt;Bảo hành&lt;/th&gt;        &lt;/tr&gt;    &lt;/thead&gt;    &lt;tbody&gt;        &lt;?php        // Kết nối database        include &quot;connect.php&quot;;        $sql = &quot;SELECT * FROM products&quot;;        $result = mysqli_query($conn, $sql);        while ($row = mysqli_fetch_assoc($result)) {            ?&gt;            &lt;br&gt;            &lt;tr&gt;                &lt;td&gt;&lt;?php echo $row[&apos;id&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;name&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt; &lt;img width=&quot;30&quot; height=&quot;30&quot; src=&quot;images/products/&lt;?php echo $row[&apos;image&apos;] ?&gt;&quot; alt=&quot;&quot;&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;price&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;warranty&apos;] ?&gt;&lt;/td&gt;            &lt;/tr&gt;        &lt;?php } ?&gt;    &lt;/tbody&gt;    &lt;!-- Thêm sản phẩm --&gt;    &lt;div&gt;&lt;a href=&quot;add_product.php&quot;&gt;Thêm sản phẩm&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;// Code trong file add_product.php&lt;?php    // Kết nối database    include &quot;connect.php&quot;;    if (isset($_POST[&apos;btn&apos;])) {        $name = $_POST[&apos;name&apos;];        $image = $_FILES[&apos;image&apos;][&apos;name&apos;];        $price = $_POST[&apos;price&apos;];        $warranty = $_POST[&apos;warranty&apos;];        $sql = &quot;INSERT INTO products (name, image, price, warranty) VALUES (&apos;$name&apos;, &apos;$image&apos;, &apos;$price&apos;, &apos;$warranty&apos;)&quot;;        $result = mysqli_query($conn, $sql);        if ($result) {            move_uploaded_file($_FILES[&apos;image&apos;][&apos;tmp_name&apos;], &quot;images/products/$image&quot;);            echo &quot;Thêm sản phẩm thành công&quot;;        } else {            echo &quot;Thêm sản phẩm thất bại&quot;;        }    }?&gt;&lt;form action=&quot;add_product.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    Tên sản phẩm: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;&lt;br&gt;    Hình ảnh: &lt;input type=&quot;file&quot; name=&quot;image&quot;&gt;&lt;br&gt;&lt;br&gt;    Giá: &lt;input type=&quot;text&quot; name=&quot;price&quot;&gt;&lt;br&gt;&lt;br&gt;    Bảo hành: &lt;input type=&quot;text&quot; name=&quot;warranty&quot;&gt;&lt;br&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Thêm sản phẩm&quot;&gt;&lt;/form&gt;
+</note>
+</topic>
+<topic id="107" parent="104" guid="fo6eMl8pmk2i1mWzYYqhfQ" x="2181.24" y="1196.40" text="Xóa dữ liệu">
+<note>
+// Code trong file product.php&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;thead&gt;        &lt;tr&gt;            &lt;th&gt;Id----&lt;/th&gt;            &lt;th&gt;Tên sản phẩm----&lt;/th&gt;            &lt;th&gt;Hình ảnh----&lt;/th&gt;            &lt;th&gt;Giá----&lt;/th&gt;            &lt;th&gt;Bảo hành&lt;/th&gt;        &lt;/tr&gt;    &lt;/thead&gt;    &lt;tbody&gt;        &lt;?php        // Kết nối database        include &quot;connect.php&quot;;        $sql = &quot;SELECT * FROM products&quot;;        $result = mysqli_query($conn, $sql);        while ($row = mysqli_fetch_assoc($result)) {            ?&gt;            &lt;br&gt;            &lt;tr&gt;                &lt;td&gt;&lt;?php echo $row[&apos;id&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;name&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt; &lt;img width=&quot;30&quot; height=&quot;30&quot; src=&quot;images/products/&lt;?php echo $row[&apos;image&apos;] ?&gt;&quot; alt=&quot;&quot;&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;price&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;warranty&apos;] ?&gt;&lt;/td&gt;                &lt;!-- Xóa sản phẩm --&gt;                &lt;td&gt;&lt;a href=&quot;delete_product.php?id=&lt;?php echo $row[&apos;id&apos;] ?&gt;&quot;&gt; Xóa&lt;/a&gt;&lt;/td&gt;            &lt;/tr&gt;        &lt;?php } ?&gt;    &lt;/tbody&gt;    &lt;!-- Thêm sản phẩm --&gt;    &lt;div&gt;&lt;a href=&quot;add_product.php&quot;&gt;Thêm sản phẩm&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;// Code trong file delete_product.php&lt;?php     // Kết nối database    include &quot;connect.php&quot;;    if (isset($_GET[&apos;id&apos;])) {        $id = $_GET[&apos;id&apos;];        $sql = &quot;DELETE FROM products WHERE id = $id&quot;;        $result = mysqli_query($conn, $sql);        if ($result) {            echo &quot;Xóa sản phẩm thành công&quot;;            header(&quot;location: product.php&quot;);        } else {            echo &quot;Xóa sản phẩm thất bại&quot;;        }    }?&gt;
+</note>
+</topic>
+<topic id="108" parent="104" guid="8dKkjDeXw0m9lSmmvI06Kw" x="2197.24" y="1240.96" text="Cập nhật dữ liệu">
+<note>
+// Code trong file product.php&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;thead&gt;        &lt;tr&gt;            &lt;th&gt;Id----&lt;/th&gt;            &lt;th&gt;Tên sản phẩm----&lt;/th&gt;            &lt;th&gt;Hình ảnh----&lt;/th&gt;            &lt;th&gt;Giá----&lt;/th&gt;            &lt;th&gt;Bảo hành&lt;/th&gt;        &lt;/tr&gt;    &lt;/thead&gt;    &lt;tbody&gt;        &lt;?php        // Kết nối database        include &quot;connect.php&quot;;        $sql = &quot;SELECT * FROM products&quot;;        $result = mysqli_query($conn, $sql);        while ($row = mysqli_fetch_assoc($result)) {            ?&gt;            &lt;br&gt;            &lt;tr&gt;                &lt;td&gt;&lt;?php echo $row[&apos;id&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;name&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt; &lt;img width=&quot;30&quot; height=&quot;30&quot; src=&quot;images/products/&lt;?php echo $row[&apos;image&apos;] ?&gt;&quot; alt=&quot;&quot;&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;price&apos;] ?&gt;&lt;/td&gt;                &lt;td&gt;&lt;?php echo $row[&apos;warranty&apos;] ?&gt;&lt;/td&gt;                &lt;!-- Sửa sản phẩm --&gt;                &lt;td&gt;&lt;a href=&quot;edit_product.php?id=&lt;?php echo $row[&apos;id&apos;] ?&gt;&quot;&gt; Sửa&lt;/a&gt;&lt;/td&gt;                &lt;!-- Xóa sản phẩm --&gt;                &lt;td&gt;&lt;a href=&quot;delete_product.php?id=&lt;?php echo $row[&apos;id&apos;] ?&gt;&quot;&gt; Xóa&lt;/a&gt;&lt;/td&gt;            &lt;/tr&gt;        &lt;?php } ?&gt;    &lt;/tbody&gt;    &lt;!-- Thêm sản phẩm --&gt;    &lt;div&gt;&lt;a href=&quot;add_product.php&quot;&gt;Thêm sản phẩm&lt;/a&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;// Code trong file edit_product.php&lt;?php    // Kết nối database    include &quot;connect.php&quot;;    // Sửa sản phẩm    if (isset($_POST[&apos;btn&apos;])) {        $id = $_POST[&apos;id&apos;];        $name = $_POST[&apos;name&apos;];        $image = $_FILES[&apos;image&apos;][&apos;name&apos;];        $price = $_POST[&apos;price&apos;];        $warranty = $_POST[&apos;warranty&apos;];        $sql = &quot;UPDATE products SET name = &apos;$name&apos;, image = &apos;$image&apos;, price = &apos;$price&apos;, warranty = &apos;$warranty&apos; WHERE id = $id&quot;;        $result = mysqli_query($conn, $sql);        if ($result) {            move_uploaded_file($_FILES[&apos;image&apos;][&apos;tmp_name&apos;], &quot;images/products/$image&quot;);            echo &quot;Cập nhật sản phẩm thành công&quot;;            header(&quot;location: product.php&quot;);        } else {            echo &quot;Cập nhật sản phẩm thất bại&quot;;        }    }    if (isset($_GET[&apos;id&apos;])) {        $id = $_GET[&apos;id&apos;];        $sql = &quot;SELECT * FROM products WHERE id = $id&quot;;        $result = mysqli_query($conn, $sql);        $row = mysqli_fetch_assoc($result);    }?&gt;&lt;form action=&quot;edit_product.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    &lt;input type=&quot;hidden&quot; name=&quot;id&quot; value=&quot;&lt;?php echo $row[&apos;id&apos;] ?&gt;&quot;&gt;    Tên sản phẩm: &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&lt;?php echo $row[&apos;name&apos;] ?&gt;&quot;&gt;&lt;br&gt;&lt;br&gt;    Hình ảnh:     &lt;span&gt;&lt;img width=&quot;30&quot; height=&quot;30&quot; src=&quot;images/products/&lt;?php echo $row[&apos;image&apos;] ?&gt;&quot; alt=&quot;&quot;&gt;&lt;/span&gt;    &lt;input type=&quot;file&quot; name=&quot;image&quot;&gt;&lt;br&gt;&lt;br&gt;    Giá: &lt;input type=&quot;text&quot; name=&quot;price&quot; value=&quot;&lt;?php echo $row[&apos;price&apos;] ?&gt;&quot;&gt;&lt;br&gt;&lt;br&gt;    Bảo hành: &lt;input type=&quot;text&quot; name=&quot;warranty&quot; value=&quot;&lt;?php echo $row[&apos;warranty&apos;] ?&gt;&quot;&gt;&lt;br&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Cập nhật sản phẩm&quot;&gt;&lt;/form&gt;
+</note>
+</topic>
+<topic id="109" parent="104" guid="-_p1Ivo_2U2TYrAb8TCaBA" x="2210.74" y="1285.52" text="Tạo trang đăng nhập">
+<note>
+// Code trong file login.php&lt;?php// Kết nối databaseinclude &quot;connect.php&quot;;session_start();if(isset($_SESSION[&apos;user&apos;])) {    header(&quot;location: index.php&quot;);}if (isset($_POST[&apos;btn&apos;])) {    $email = $_POST[&apos;email&apos;];    $password = $_POST[&apos;password&apos;];    $sql = &quot;SELECT * FROM accounts WHERE email = &apos;$email&apos; AND password = &apos;$password&apos;&quot;;    $result = mysqli_query($conn, $sql);    $row = mysqli_fetch_assoc($result);    if ($row) {        $_SESSION[&apos;user&apos;] = $email;        header(&quot;location: index.php&quot;);    } else {        echo &quot;Tài khoản hoặc mật khẩu không đúng&quot;;    }}?&gt;&lt;form action=&quot;login.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    Tài khoản: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br&gt;    Mật khẩu: &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Đăng nhập&quot;&gt;&lt;/form&gt;// Code trong file index.php&lt;?php    // Kết nối database    include_once &quot;connect.php&quot;;    session_start();    if (isset($_SESSION[&quot;user&quot;])) {        echo &quot;Xin chào &quot; . $_SESSION[&quot;user&quot;];    } else {        header(&quot;location: login.php&quot;);    }?&gt;&lt;h1&gt;Đây là trang chủ&lt;/h1&gt;
+</note>
+</topic>
+<topic id="110" parent="104" guid="gfoUT_KkakKud_knv9bzug" x="2225.74" y="1330.08" text="Tạo chức năng đăng xuất">
+<note>
+// Code trong file login.php&lt;?php// Kết nối databaseinclude &quot;connect.php&quot;;session_start();if(isset($_SESSION[&apos;user&apos;])) {    header(&quot;location: index.php&quot;);}if (isset($_POST[&apos;btn&apos;])) {    $email = $_POST[&apos;email&apos;];    $password = $_POST[&apos;password&apos;];    $sql = &quot;SELECT * FROM accounts WHERE email = &apos;$email&apos; AND password = &apos;$password&apos;&quot;;    $result = mysqli_query($conn, $sql);    $row = mysqli_fetch_assoc($result);    if ($row) {        $_SESSION[&apos;user&apos;] = $email;        header(&quot;location: index.php&quot;);    } else {        echo &quot;Tài khoản hoặc mật khẩu không đúng&quot;;    }}?&gt;&lt;form action=&quot;login.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    Tài khoản: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br&gt;    Mật khẩu: &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Đăng nhập&quot;&gt;&lt;/form&gt;&lt;a href=&quot;register.php&quot;&gt;Đăng ký&lt;/a&gt;// Code trong file register.php&lt;?php     // Kết nối database    include &quot;connect.php&quot;;    session_start();    // Đăng ký    if (isset($_POST[&apos;btn&apos;])) {        $email = $_POST[&apos;email&apos;];        $password = $_POST[&apos;password&apos;];        $repassword = $_POST[&apos;repassword&apos;];        if ($password != $repassword) {            echo &quot;Mật khẩu không trùng nhau&quot;;            exit();        } else if (!preg_match(&apos;/^[^@ ]+@[^@ ]+\.[^@ ]+$/&apos;, $email)) {            echo &quot;Email không hợp lệ&quot;;            exit();        }                $sql_select = &quot;SELECT * FROM accounts WHERE email = &apos;$email&apos;&quot;;        $result = mysqli_query($conn, $sql_select);        if (mysqli_num_rows($result) &gt; 0) {            echo &quot;Email đã tồn tại&quot;;            exit();        }        $sql = &quot;INSERT INTO accounts (email, password, level) VALUES (&apos;$email&apos;, &apos;$password&apos;, 2)&quot;;        $result = mysqli_query($conn, $sql);        if ($result) {            echo &quot;Đăng ký thành công&quot;;            header(&quot;location: login.php&quot;);        } else {            echo &quot;Đăng ký thất bại&quot;;        }    }?&gt;&lt;form action=&quot;register.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    Email: &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;    Mật khẩu: &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;    Nhập lại mật khẩu: &lt;input type=&quot;password&quot; name=&quot;repassword&quot;&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Đăng ký&quot;&gt;&lt;/form&gt;
+</note>
+</topic>
+<topic id="111" parent="104" guid="WFMbb49uj0-ughuZh_SkWQ" x="2218.74" y="1374.64" text="Tạo chức năng đăng ký">
+<note>
+// Code trong file login.php&lt;?php// Kết nối databaseinclude &quot;connect.php&quot;;session_start();if(isset($_SESSION[&apos;user&apos;])) {    header(&quot;location: index.php&quot;);}if (isset($_POST[&apos;btn&apos;])) {    $email = $_POST[&apos;email&apos;];    $password = $_POST[&apos;password&apos;];    $sql = &quot;SELECT * FROM accounts WHERE email = &apos;$email&apos; AND password = &apos;$password&apos;&quot;;    $result = mysqli_query($conn, $sql);    $row = mysqli_fetch_assoc($result);    if ($row) {        $_SESSION[&apos;user&apos;] = $email;        header(&quot;location: index.php&quot;);    } else {        echo &quot;Tài khoản hoặc mật khẩu không đúng&quot;;    }}?&gt;&lt;form action=&quot;login.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    Tài khoản: &lt;input type=&quot;text&quot; name=&quot;email&quot;&gt;&lt;br&gt;    Mật khẩu: &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Đăng nhập&quot;&gt;&lt;/form&gt;&lt;a href=&quot;register.php&quot;&gt;Đăng ký&lt;/a&gt;// Code trong file register.php&lt;?php     // Kết nối database    include &quot;connect.php&quot;;    session_start();    // Đăng ký    if (isset($_POST[&apos;btn&apos;])) {        $email = $_POST[&apos;email&apos;];        $password = $_POST[&apos;password&apos;];        $repassword = $_POST[&apos;repassword&apos;];        if ($password != $repassword) {            echo &quot;Mật khẩu không trùng nhau&quot;;            exit();        } else if (!preg_match(&apos;/^[^@ ]+@[^@ ]+\.[^@ ]+$/&apos;, $email)) {            echo &quot;Email không hợp lệ&quot;;            exit();        }                $sql_select = &quot;SELECT * FROM accounts WHERE email = &apos;$email&apos;&quot;;        $result = mysqli_query($conn, $sql_select);        if (mysqli_num_rows($result) &gt; 0) {            echo &quot;Email đã tồn tại&quot;;            exit();        }        $sql = &quot;INSERT INTO accounts (email, password, level) VALUES (&apos;$email&apos;, &apos;$password&apos;, 2)&quot;;        $result = mysqli_query($conn, $sql);        if ($result) {            echo &quot;Đăng ký thành công&quot;;            header(&quot;location: login.php&quot;);        } else {            echo &quot;Đăng ký thất bại&quot;;        }    }?&gt;&lt;form action=&quot;register.php&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    Email: &lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;    Mật khẩu: &lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;br&gt;    Nhập lại mật khẩu: &lt;input type=&quot;password&quot; name=&quot;repassword&quot;&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Đăng ký&quot;&gt;&lt;/form&gt;
+</note>
+</topic>
+<topic id="112" parent="104" guid="rEdalubIkU-xHioBGrWLeQ" x="2221.24" y="1419.20" text="Tạo chức năng tìm kiếm">
+<note>
+// Code trong file index.php&lt;?php    session_start();    if (isset($_SESSION[&quot;user&quot;])) {        echo &quot;Xin chào &quot; . $_SESSION[&quot;user&quot;];    } else {        header(&quot;location: login.php&quot;);    }?&gt;&lt;h1&gt;Đây là trang chủ&lt;/h1&gt;&lt;!-- Đăng xuất --&gt;&lt;a href=&quot;logout.php&quot;&gt;    &lt;button type=&quot;submit&quot; name=&quot;logout&quot;&gt;Đăng xuất&lt;/button&gt;&lt;/a&gt;&lt;!-- Chức năng tìm kiếm --&gt;&lt;br&gt;&lt;br&gt;&lt;form action=&quot;index.php&quot; method=&quot;post&quot;&gt;    &lt;input type=&quot;text&quot; name=&quot;searchContent&quot;&gt;    &lt;input type=&quot;submit&quot; value=&quot;Tìm kiếm&quot; name=&quot;btnSearch&quot;&gt;&lt;/form&gt;&lt;?php     // Kết nối database    include_once &quot;connect.php&quot;;    // Tìm kiếm    if (isset($_POST[&apos;btnSearch&apos;])) {        $content = $_POST[&apos;searchContent&apos;];        $sql = &quot;SELECT * FROM products WHERE name LIKE &apos;%$content%&apos;&quot;;        $result = mysqli_query($conn, $sql);        if (mysqli_num_rows($result) &gt; 0) {            while ($row = mysqli_fetch_assoc($result)) {                echo &quot;&lt;a href=&apos;edit_product.php?id=&quot; . $row[&apos;id&apos;] . &quot;&apos;&gt;&quot; . $row[&apos;name&apos;] . &quot;&lt;/a&gt;&lt;br&gt;&quot;;            }        } else {            echo &quot;Không tìm thấy sản phẩm&quot;;        }    }?&gt;
+</note>
+</topic>
+<topic id="113" parent="104" guid="36oRBvRLLEqeKnuHorBC6g" x="2223.74" y="1471.76" text="Tạo chức năng bình luận\Nvới 1 database khác">
+<note>
+// Code trong file product.php&lt;?php// Kết nối databaseinclude &quot;config/connect.php&quot;;session_start();$_SESSION[&apos;user_id&apos;] = 1; // Chỉ dùng cho admin$sql = &quot;SELECT * FROM products&quot;;$result = mysqli_query($conn, $sql);while ($row = mysqli_fetch_assoc($result)) {    ?&gt;    &lt;div&gt;        &lt;p&gt;            Id: &lt;?php echo $row[&apos;product_id&apos;] ?&gt;&lt;br&gt;            &lt;a href=&quot;comment_product.php?id=&lt;?php echo $row[&apos;product_id&apos;] ?&gt;&quot;&gt;                Tên sản phẩm: &lt;?php echo $row[&apos;product_name&apos;] ?&gt;            &lt;/a&gt;&lt;br&gt;            Giá: &lt;?php echo number_format($row[&apos;product_price&apos;]) ?&gt;&lt;br&gt;            Bảo hành: &lt;?php echo $row[&apos;product_warranty&apos;] ?&gt;        &lt;/p&gt;    &lt;/div&gt;&lt;?php } ?&gt;// Code trong file comment_product.php&lt;?php// Kết nối databaseinclude &quot;config/connect.php&quot;;if (isset($_GET[&apos;id&apos;])) {    $id = $_GET[&apos;id&apos;];    $sql_select_product_name = &quot;SELECT product_name FROM products WHERE product_id = $id&quot;;    // Thực hiện truy vấn để lấy tên sản phẩm theo id    $query_product_name = mysqli_query($conn, $sql_select_product_name);    $res = mysqli_fetch_assoc($query_product_name);    $sql = &quot;SELECT u.name, c.content, p.product_name              FROM users u INNER JOIN comments c INNER JOIN products p             ON u.user_id = c.user_id AND c.product_id = p.product_id             WHERE p.product_id = $id&quot;;    $result = mysqli_query($conn, $sql);    ?&gt;    &lt;h2&gt;Tên sản phẩm: &lt;?php echo $res[&apos;product_name&apos;] ?&gt;&lt;/h2&gt;&lt;br&gt;    &lt;?php    if ($row = mysqli_fetch_assoc($result)) {        do {            ?&gt;            &lt;div&gt;                &lt;p&gt;                    Tên người dùng: &lt;?php echo $row[&apos;name&apos;] ?&gt;&lt;br&gt;                    Nội dung: &lt;?php echo $row[&apos;content&apos;] ?&gt;&lt;br&gt;                &lt;/p&gt;            &lt;/div&gt;            &lt;?php        } while ($row = mysqli_fetch_assoc($result));    } else {        echo &quot;Không có bình luận nào&quot;;    }}?&gt;&lt;form action=&quot;add_comment.php?id=&lt;?php echo $id ?&gt;&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    Nội dung: &lt;input type=&quot;text&quot; name=&quot;content&quot;&gt;&lt;br&gt;&lt;br&gt;    &lt;input type=&quot;submit&quot; name=&quot;btn&quot; value=&quot;Gửi bình luận&quot;&gt;&lt;/form&gt;// Code trong file add_comment.php&lt;?phpinclude &quot;config/connect.php&quot;;if (isset($_POST[&apos;btn&apos;])) {    $id = $_GET[&apos;id&apos;];    $content = $_POST[&apos;content&apos;];    $error = &apos;&apos;;    // Kiểm tra content rỗng    if (empty($content)) {        $error = &quot;Vui lòng nhập nội dung bình luận&quot;;        exit();    } else {        session_start();        $user_id = $_SESSION[&apos;user_id&apos;];        $sql = &quot;INSERT INTO comments (comment_id, content, product_id, user_id) VALUES (null,&apos;$content&apos;, $id, $user_id)&quot;;        $result = mysqli_query($conn, $sql);        header(&quot;location: comment_product.php?id=$id&quot;);    }}?&gt;
+</note>
+</topic>
+<topic id="114" parent="0" guid="aEKL3guAu0uigdox9kjLTw" x="2374.30" y="1060.61" palette="2" colorinfo="2" text="OOP"/>
+<topic id="115" parent="114" guid="G_7yPLrhrE-Ta8LZn4DnSw" x="2409.10" y="1107.28" text="Cơ bản">
+<note>
+&lt;?php     class SuperMan  {        public $name;        public $age;        public $gender;        public $power;    }    // Tạo đối tượng    $spiderman = new SuperMan();    $spiderman-&gt;name = &quot;Spiderman&quot;;    $spiderman-&gt;age = 20;    $spiderman-&gt;gender = &quot;Male&quot;;    $spiderman-&gt;power = &quot;Flight&quot;;    echo $spiderman-&gt;name;    echo $spiderman-&gt;age;    echo $spiderman-&gt;gender;    echo $spiderman-&gt;power;?&gt;
+</note>
+</topic>
+<topic id="116" parent="114" x="2420.60" y="1151.84" text="Hành động"/>
+<topic id="117" parent="114" guid="LgF-qK2LTkicTWsoJ9NcnA" x="2410.60" y="1196.40" text="Rút gọn">
+<note>
+&lt;?php     class SuperMan  {        public $name;        public $age;        public $gender;        public $power;        function setValue($name, $age, $gender, $power){            $this-&gt;name = $name;            $this-&gt;age = $age;            $this-&gt;gender = $gender;            $this-&gt;power = $power;        }    }    $superman = new SuperMan();    $superman-&gt;setValue(&apos;Spiderman&apos;, 20, &apos;male&apos;, &apos;fly&apos;);    echo $superman-&gt;name;?&gt;
+</note>
+</topic>
+<topic id="118" parent="114" guid="EpS1Ory3w0mQrCV6KxdFng" x="2469.60" y="1240.96" text="Hàm khởi tạo (constructor)">
+<note>
+&lt;?phpclass SuperMan{    public $name;    public $age;    public $gender;    public $power;    // constructor    function __construct($name, $age, $gender, $power)    {        $this-&gt;name = $name;        $this-&gt;age = $age;        $this-&gt;gender = $gender;        $this-&gt;power = $power;    }    // destructor    function __destruct(){        echo &quot;Destructor called&quot;;    }}$spiderman = new SuperMan(&quot;Spiderman&quot;, 20, &quot;Male&quot;, &quot;Web&quot;);echo $spiderman-&gt;name . &quot; &quot; . $spiderman-&gt;age . &quot; &quot; . $spiderman-&gt;gender . &quot; &quot; . $spiderman-&gt;power;?&gt;
+</note>
+</topic>
+<topic id="119" parent="114" guid="HaS0mUS-6EeUji0LUh7fdw" x="2426.10" y="1285.52" text="Tính kế thừa">
+<note>
+&lt;?php    class Animal {        public $name;        public $color;        public $weight;                function __construct($n, $c, $w) {            $this-&gt;name = $n;            $this-&gt;color = $c;            $this-&gt;weight = $w;        }        function eat(){            echo $this-&gt;name . &quot; is eating&quot;;        }    }    class Dog extends Animal {        public $sound;                function __construct($n, $c, $w, $s) {            parent::__construct($n, $c, $w);            $this-&gt;sound = $s;        }    }    $animal = new Animal(&quot;Kitty&quot;, &quot;Black&quot;, &quot;5kg&quot;);    echo &quot;Name: &quot; . $animal-&gt;name . &quot;&lt;br&gt;&quot;;    echo &quot;Color: &quot; . $animal-&gt;color . &quot;&lt;br&gt;&quot;;    echo &quot;Weight: &quot; . $animal-&gt;weight . &quot;&lt;br&gt;&lt;br&gt;&quot;;        $dog = new Dog(&quot;Mickey&quot;, &quot;White&quot;, &quot;10kg&quot;, &quot;Woof&quot;);    echo &quot;Name: &quot; . $dog-&gt;name . &quot;&lt;br&gt;&quot;;    echo &quot;Color: &quot; . $dog-&gt;color . &quot;&lt;br&gt;&quot;;    echo &quot;Weight: &quot; . $dog-&gt;weight . &quot;&lt;br&gt;&quot;;    echo &quot;Sound: &quot; . $dog-&gt;sound . &quot;&lt;br&gt;&quot;;    $dog-&gt;eat();?&gt;
+</note>
+</topic>
+<topic id="120" parent="114" guid="xKnYgMHICkKaVvMTvLciRw" x="2426.60" y="1330.08" text="Câu lệnh var">
+<note>
+&lt;?php    class Animal {        var $name = &apos;&apos;;        var $color = &apos;&apos;;        var $weight = &apos;&apos;;    }?&gt;
+</note>
+</topic>
+<topic id="121" parent="114" guid="2fHnb_k-8E-nBX5EeYhYEA" x="2434.10" y="1374.64" text="class Caculator">
+<note>
+&lt;?php    class Caculator{        var $numberA, $numberB;        const MSG_CONTENT = &apos;Kết quả là: {value}&apos;;        public function setNumberA ($value){            $this-&gt;numberA = $value;        }        public function setNumberB ($value){            $this-&gt;numberB = $value;        }        public function add( $valueA, $valueB ){            return $valueA + $valueB;        }        public function minus( $valueA, $valueB ){            return $valueA + $valueB;        }        public function multiply($valueA, $valueB){            return $valueA * $valueB;         }        public function divide($valueA, $valueB){            if($valueB &gt; 0){                return $valueA / $valueB;            }            return &apos;Không thể chia cho số 0&apos;;        }        public function showResult($msg, $value){            echo str_replace(&apos;{value}&apos;, $value, $msg);        }        public function showShortResult($value){            $msg = $this::MSG_CONTENT;            $this-&gt;showResult($msg, $value);        }        public function demoThis(){            return $this;        }    }    // Khởi tạo đối tượng    $calc = new Caculator();    // Lấy giá trị thuộc tính    echo $calc-&gt;numberA;    echo &quot;&lt;br&gt;&quot;;    echo $calc-&gt;numberB;    echo &quot;&lt;hr&gt;&quot;;    // Gán giá trị mới cho thuộc tính    $calc-&gt;numberA = 10;    $calc-&gt;numberB = 20;    echo $calc-&gt;numberA;    echo &quot;&lt;br&gt;&quot;;    echo $calc-&gt;numberB;    echo &quot;&lt;hr&gt;&quot;;    echo $calc-&gt;add($calc-&gt;numberA, $calc-&gt;numberB);    echo &quot;&lt;hr&gt;&quot;;    echo $calc::MSG_CONTENT;    echo &quot;&lt;hr&gt;&quot;;    echo &quot;&lt;h3&gt;Thông báo kết quả: &lt;/h3&gt;&quot;;    $total = $calc-&gt;add($calc-&gt;numberA, $calc-&gt;numberB);    $calc-&gt;showShortResult($total);    echo &quot;&lt;br&gt;&quot;;    echo &quot;&lt;hr&gt;&quot;;?&gt;
+</note>
+</topic>
+<topic id="122" parent="121" guid="fOv_XM5lXUm2alkGR_jmqg" x="2464.10" y="1419.20" text="Đối tượng $this">
+<note>
+// Code trong file ex01.php&lt;?phprequire_once &quot;classes/caculator.php&quot;;$calc = new Caculator();var_dump($calc-&gt;demoThis());echo &quot;&lt;br&gt;&quot;;echo &quot;&lt;hr&gt;&quot;;$calc-&gt;setNumberA(55);$calc-&gt;setNumberB(45);// $total = $calc-&gt;add($calc-&gt;numberA, $calc-&gt;numberB);$total = $calc-&gt;add(100, 200);$calc-&gt;showShortResult($total);?&gt;
+</note>
+</topic>
+<topic id="123" parent="121" guid="nSaBOUteCkmOaQiBwlb0oA" x="2497.10" y="1463.76" text="Các hàm xử lý trong OOP">
+<note>
+// Code trong file ex02.php&lt;?phprequire_once &quot;classes/caculator.php&quot;;// use Demo\Caculator;$calc = new Caculator();//I. Kiểm tra thuộc tính tồn tại// Cách 1: Kiểm tra bằng hàm isset() hoặc empty()if (isset($calc-&gt;numberC)) {    echo $calc-&gt;numberC;} else {    echo &apos;Thuộc tính numberC không tồn tại&apos;;}echo &apos;&lt;hr&gt;&apos;;// Cách 2: Kiểm tra bằng hàm property_exists()if (property_exists($calc, &apos;numberC&apos;)) {    echo $calc-&gt;numberC;} else {    echo &apos;Thuộc tính numberC không tồn tại&apos;;}echo &apos;&lt;hr&gt;&apos;;//II. Kiểm tra phương thức tồn tại// Cách 1: Kiểm tra bằng hàm method_exists()if (method_exists($calc, &apos;showMsg&apos;)) {    echo $calc-&gt;showMsg();} else {    echo &apos;Phương thức add() không tồn tại&apos;;}echo &apos;&lt;hr&gt;&apos;;$className = Caculator::class;echo &apos;Tên class là: &apos; . $className . &apos;&lt;br&gt;&apos;;?&gt;
+</note>
+</topic>
+<topic id="124" parent="121" guid="fHhnu90AdEaS_7Y0lWT1oA" x="2495.60" y="1516.32" text="Phạm vi truy cập\Npublic, protected, private">
+<note>
+// Code trong file ex03.php&lt;?php    use OOP_PHP\Caculator;    require_once &quot;classes/caculator.php&quot;;    $calc = new Caculator();    $calc-&gt;setUsername(&apos;admin&apos;);    $calc-&gt;setPassword(&apos;123456&apos;);    echo $calc-&gt;getUsername();    echo &quot;&lt;br&gt;&quot;;    echo $calc-&gt;getPassword();    echo &quot;&lt;hr&gt;&quot;;?&gt;
+</note>
+</topic>
+<topic id="125" parent="124" x="2521.10" y="1576.88" text="public có thể truy cập ở\Nbên ngoài class"/>
+<topic id="126" parent="124" x="2515.10" y="1637.44" text="private chỉ có thể truy\Ncập trong class"/>
+<topic id="127" parent="124" x="2536.60" y="1698.00" text="class kế thừa con có thể truy\Ncập vào biến protected"/>
+<topic id="128" parent="114" x="2425.60" y="1750.56" text="class Person"/>
+<topic id="129" parent="128" guid="6V19r3ZIR06DkmjjYsLY_Q" x="2498.60" y="1795.12" text="Thuộc tính tĩnh trong OOP">
+<note>
+// Code trong file person.php&lt;?php    class Person{        public static $fullName=&quot;Hà Linh&quot;;        public static $age = 22;        public $location = &quot;TP.HCM&quot;;        public static $person;        // Hàm cho phép gọi phương thức, thuộc tính bình thường trong phương thức tĩnh (hàm tĩnh).        public function __construct(){            self::$person = $this;        }        public function getMessage(){            return &apos;Đăng ký tài khoản thành công&apos;;        }        public static function getName(){            echo self::$person-&gt;getMessage();            echo &apos;&lt;br&gt;&apos;;            echo &apos;Địa điểm: &apos;.self::$person-&gt;location;            echo &apos;&lt;br&gt;&apos;;            return &quot;Tên của bạn là: &quot;. self::$fullName;        }        public function getAge(){            echo self::getMessage();            echo &apos;&lt;br&gt;&apos;;            echo &apos;Địa điểm: &apos;.self::$person-&gt;location;            echo &apos;&lt;br&gt;&apos;;            return &quot;Tuổi của bạn là: &quot; .self::$age;        }    }?&gt;// Code trong file ex05.php&lt;?php    require_once &quot;classes/Person.php&quot;;    $person = new Person();    echo Person::$fullName . &quot;&lt;br&gt;&quot;;    echo Person::$age .&quot;&lt;br&gt;&quot;;    echo &quot;&lt;hr&gt;&quot;;    echo Person::getName() . &quot;&lt;br&gt;&quot;;    echo &quot;&lt;hr&gt;&quot;;    echo $person-&gt;location .&quot;&lt;br&gt;&quot;;    echo &quot;&lt;hr&gt;&quot;;    echo $person-&gt;getAge() .&quot;&lt;br&gt;&quot;;?&gt;
+</note>
+</topic>
+<topic id="130" parent="114" guid="6ztha5IIiUGfDdZv-RrikA" x="2428.60" y="1839.68" text="class Number"/>
+<topic id="131" parent="130" guid="sjzx0DN_uk-OZeTJhxl7pA" x="2498.60" y="1884.24" text="Thuộc tính tĩnh trong OOP">
+<note>
+// Code trong file number.php&lt;?phpclass Number{    public static $number = 0;    public function __construct(){        self::$number++;        echo &apos;Giá trị: &apos;. self::$number . &apos;&lt;br&gt;&apos;;    }}?&gt;// Code trong file ex06.php&lt;?php    require_once &quot;classes/number.php&quot;;    $number1 =  new Number();    $number2 =  new Number();?&gt;
+</note>
+</topic>
+<topic id="132" parent="114" guid="ocHr9BxCB0KcPOnW6ywbOg" x="2441.60" y="1928.80" text="class animal, dog"/>
+<topic id="133" parent="132" guid="d4VsFX6pI0-J7rh7Ex2WSA" x="2498.60" y="1973.36" text="Thuộc tính tĩnh trong OOP">
+<note>
+// Code trong file animal.php&lt;?php    class Animal{        public static function render(){            // echo self::getName();            echo static::getName();        }        public static function getName(){            return &apos;Đây là động vật&apos;;        }    }?&gt;// Code trong file dog.php&lt;?php    class Dog extends Animal{        public static function getName(){            return &quot;Đây là dog&quot;;        }    }?&gt;// Code trong file ex07.php&lt;?php    require_once &quot;classes/animal.php&quot;;    require_once &quot;classes/dog.php&quot;;    Dog::render();?&gt;
+</note>
+</topic>
+<topic id="134" parent="114" guid="FjCY8la8AU2uDtWc47cz9Q" x="2483.10" y="2017.92" text="Lớp trừu tượng (abstract class)">
+<note>
+// Code trong file model.php&lt;?php    abstract class Model{        protected $msg;        const DB_INFO = [&apos;localhost&apos;,&apos;root&apos;,&apos;unnicode&apos;];        // Phương thức bình thường        public function getMessage(){            return &apos;This is my message&apos;;        }        // Phương thức trừu tượng (Hiển thị)        abstract public function show();        // Phương thức trừu tượng (Thêm)        abstract public function add();        // Phương thức trừu tượng (Cập nhật)        abstract public function update();        // Phương thức trừu tượng (Hiển thị)        abstract public function delete();    }?&gt;// Code trong file product_model.php&lt;?php    class ProductModel extends Model{        public function show(){                    }        public function add(){                    }        public function update(){                    }        public function delete(){                    }    }?&gt;// Code trong file ex08.php&lt;?php    require_once &quot;classes/model.php&quot;;    require_once &quot;classes/product_model.php&quot;;    $model = new ProductModel();    var_dump($model-&gt;getMessage());    ?&gt;
+</note>
+</topic>
+<topic id="135" parent="114" guid="Vo15N4WPUkGY-A-V7I6Rxg" x="2414.10" y="2062.48" text="interface"/>
+<topic id="136" parent="135" guid="sruyB3AJq0aa2tvlbvmXMg" x="2472.60" y="2107.04" text="Cú pháp interface">
+<note>
+&lt;?php    interface AuthInterface{        const _MSG_TEMPLATE = [];        public function login();        public function register();        public function forgotPassword();        public function resetPassword();        public function activeAccount();    }?&gt;
+</note>
+</topic>
+<topic id="137" parent="135" guid="fRt-bO7ou0-EtfiFQGBhjw" x="2508.60" y="2151.60" text="Cú pháp implement interface">
+<note>
+&lt;?php    interface AuthInterface{        const _MSG_TEMPLATE = [];        public function login();        public function register();        public function forgotPassword();        public function resetPassword();        public function activeAccount();    }    class Auth implements AuthInterface{        public function login(){            // Xử lý đăng nhập        }        public function register(){            // Xử lý đăng ký        }        public function forgotPassword(){            // Xử lý quên mật khẩu        }        public function resetPassword(){            // Xử lý thay đổi mật khẩu        }        public function activeAccount(){            // Xử lý kích hoạt tài khoản        }    }?&gt;
+</note>
+</topic>
+<topic id="138" parent="135" guid="SKKFTo-5lU2owRwfI7sTAw" x="2478.60" y="2204.16" text="Cú pháp implement\Nnhiều interface">
+<note>
+class AdminAuth implements AuthInterface, RoleInterface{        // class body    }
+</note>
+</topic>
+<topic id="139" parent="138" guid="ei6UOWxjTkOa7svSdzIyOQ" x="2477.60" y="2256.72" text="class auth">
+<note>
+// Code trong file auth.php&lt;?php    require_once &quot;interfaces/auth_interface.php&quot;;    require_once &quot;interfaces/role_interface.php&quot;;    class Auth implements AuthInterface, RoleInterface{        public function login(){            // Xử lý đăng nhập            return &apos;This is login function&apos;;        }        public function register(){            // Xử lý đăng ký        }        public function forgotPassword(){            // Xử lý quên mật khẩu        }        public function resetPassword(){            // Đổi mật khẩu        }        public function activeAccount(){            // Kích hoạt tài khoản        }        public function checkRole($role){            // Kiểm tra quyền        }        public function methodIbarInterface(){}        public function methodArrayAccessInterface(){}    }?&gt;
+</note>
+</topic>
+<topic id="140" parent="135" guid="pfp1WsdRU0y869Oz_p2DZA" x="2498.60" y="2301.28" text="Cú pháp interface kế thừa">
+<note>
+interface IFoo extends IBar, ArrayAccess, IteratorAggregate, Serializable{        // Interface body    }
+</note>
+</topic>
+<topic id="141" parent="140" guid="UoRUThPHuk-As0PvQMQ8jQ" x="2518.60" y="2345.84" text="interface AuthInterface">
+<note>
+// Code trong file auth_interface.php&lt;?php    require_once &quot;interfaces/ibar.php&quot;;    require_once &quot;interfaces/array_access.php&quot;;    interface AuthInterface extends IBarInterface, ArrayAccessInterface{        const _MSG_TEMPLATE = [            &apos;required&apos;=&gt; &apos;Field {name} is required&apos;,        ];        public function login();        public function register();        public function forgotPassword();        public function resetPassword();        public function activeAccount();    }?&gt;
+</note>
+</topic>
+<topic id="142" parent="140" guid="TLKVW_9WTkSANaLzmicv7A" x="2517.10" y="2390.40" text="interface IBarInterface">
+<note>
+// Code trong file ibar.php&lt;?php    interface IBarInterface{        public function methodIbarInterface();    }?&gt;
+</note>
+</topic>
+<topic id="143" parent="140" guid="jU78L8IBvEOqpXZVs6CfAw" x="2518.60" y="2434.96" text="interface RoleInterface">
+<note>
+// Code trong file role_interface&lt;?php    interface RoleInterface{        public function checkRole($role);    }?&gt;
+</note>
+</topic>
+<topic id="144" parent="140" guid="0Nsa_Sp9W0W2Vq0r8SOxvw" x="2542.60" y="2479.52" text="interface ArrayAccessInterface">
+<note>
+// Code trong file array_access.php&lt;?php    interface ArrayAccessInterface{        public function methodArrayAccessInterface();    }?&gt;
+</note>
+</topic>
+<topic id="145" parent="114" guid="3cHmmivhX0erCG-O4OEBgA" x="2475.10" y="2532.08" text="Khi nào dùng abstract class,\Nkhi nào dùng interface"/>
+<topic id="146" parent="145" guid="pFn-2gZAEEKNVVwzHPx7dQ" x="2667.60" y="2608.64" text="Dùng abstract class khi: \N+ Chia sẻ phương thức, thuộc tính, hằng số giữa các lớp trong quan hệ kế thừa\N+ Muốn class này chứa các thành phần private, protected, public\N+ Muốn class này chứa các phương thức static, final">
+<style align="left"/>
+</topic>
+<topic id="147" parent="145" guid="Q_5bGKAFq06ejc3ZIECjAQ" x="2691.10" y="2701.20" text="Dùng interface template khi:\N+ Định nghĩa các chức năng, giá trị chung cho các lớp không có mối quan hệ với nhau\N+ Muốn tận dụng lợi ích của đa kế thừa\N+ Muốn xác định các hành vi và không quan tâm class nào sẽ thực thi">
+<style align="left"/>
+</topic>
+<topic id="148" parent="114" guid="c0eE2Cre1kGpNqtaXuDWcQ" x="2448.60" y="2769.76" text="Phương thức Magic"/>
+<topic id="149" parent="148" guid="_1Fynnxis0SEnwtsGJwOBg" x="2495.60" y="2814.32" text="__construct(), __destruct()">
+<note>
+Được gọi tự động khi một đối tượng được tạo và hủy tương ứng. Thường được sử dụng để khởi tạo và dọn dẹp tài nguyên.
+</note>
+</topic>
+<topic id="150" parent="148" guid="uJ6mLF31UEWGOAMQgQU6Pw" x="2461.10" y="2858.88" text="__get(), __set()">
+<note>
+Được gọi khi truy cập vào thuộc tính không tồn tại hoặc private/protected. Cho phép bạn kiểm soát cách thức truy cập và gán giá trị cho thuộc tính.
+</note>
+</topic>
+<topic id="151" parent="148" guid="J8JAhrq3Okmxg9U43AdpdA" x="2483.10" y="2903.44" text="__call(), __callStatic()">
+<note>
+Được gọi khi gọi một phương thức không tồn tại hoặc private/protected. Cho phép bạn xử lý các lời gọi phương thức không hợp lệ hoặc thực hiện các hành động tùy chỉnh.
+</note>
+</topic>
+<topic id="152" parent="114" guid="Gdr73sS8W0ON9M4bZRrFwQ" x="2436.60" y="2948.00" text="traits trong OOP">
+<note>
+Trait là một cấu trúc mạnh mẽ trong PHP, cho phép bạn tái sử dụng code giữa các lớp mà không cần sử dụng tính kế thừa. Nó hoạt động như một tập hợp các phương thức và thuộc tính có thể được &quot;nhúng&quot; vào bất kỳ lớp nào.
+</note>
+</topic>
+<topic id="153" parent="152" guid="YyXidngnNEeyV3W0_cCveg" x="2472.10" y="2992.56" text="Cú pháp khai báo">
+<note>
+trait TênTrait {  // Thuộc tính và phương thức  public $tênThuộcTính  public function tênPhươngThức() {    // ...  }}
+</note>
+</topic>
+<topic id="154" parent="152" guid="9OZQujohOEyXBNcKaZLGBA" x="2459.60" y="3037.12" text="Cách sử dụng">
+<note>
+class TênLớp {  use TênTrait1, TênTrait2, TênTrait3, ...;  // ...}$đối_tượng = new TênLớp();$đối_tượng-&gt;tênPhươngThức();
+</note>
+</topic>
+<topic id="155" parent="152" guid="OYXncZAxdEC7ewU0hKIzpg" x="2432.60" y="3081.68" text="Ví dụ">
+<note>
+trait SayHello {  public function sayHello() {    echo &quot;Xin chào!&quot;;  }}trait SayGoodbye {  public function sayGoodbye() {    echo &quot;Tạm biệt!&quot;;  }}class Person {  use SayHello, SayGoodbye;}$person = new Person();$person-&gt;sayHello(); // Output: Xin chào!$person-&gt;sayGoodbye(); // Output: Tạm biệt!
+</note>
+</topic>
+<topic id="156" parent="155" guid="NS0l_bv5aU2aie3XxlkcKg" x="2484.10" y="3126.24" text="Ví dụ cụ thể"/>
+<topic id="157" parent="156" guid="gOGEDD695EGxFu0754yMPA" x="2519.10" y="3170.80" text="database.php">
+<note>
+&lt;?php    trait Database{        protected $table = &apos;posts&apos;;                public function fetch(){            return &apos;Lấy dữ liệu từ table: &apos;.$this-&gt;table.&apos;&lt;br&gt;&apos;;        }        public function methodFromDb(){            echo &apos;methodFromDb&lt;br&gt;&apos;;        }    }?&gt;
+</note>
+</topic>
+<topic id="158" parent="156" guid="r3Pqw2eS-U67lgI9u_6XuA" x="2517.10" y="3215.36" text="business.php">
+<note>
+&lt;?php    trait Business{        public function methodFromBusiness(){            echo &apos;methodFromBusiness&apos;;        }    }?&gt;
+</note>
+</topic>
+<topic id="159" parent="156" guid="sJzEXtUbbkSqeujn9GyUuQ" x="2506.10" y="3259.92" text="posts.php">
+<note>
+&lt;?php    // require_once &apos;traits/business.php&apos;;    require_once &apos;traits/auth_trait.php&apos;;    class Posts{        // use Database, Business;        // public $table = &apos;posts&apos;;        use AuthTrait;        public function __construct(){            // Gán lại giá trị cho thuộc tính $table của Database            $this-&gt;table = &quot;posts&quot;;        }        public function getList(){            echo &apos;Hello getList&apos;;            echo &apos;&lt;br&gt;&apos;;            echo $this-&gt;fetch();            echo &apos;&lt;br&gt;&apos;;            echo $this-&gt;methodFromBusiness();            echo &apos;&lt;br&gt;&apos;;            echo $this-&gt;methodFromAuth();            echo &apos;&lt;br&gt;&apos;;            // echo $this-&gt;table;            // echo &apos;&lt;br&gt;&apos;;        }        public function fetch(){            echo &apos;Override&apos;;        }    }?&gt;
+</note>
+</topic>
+<topic id="160" parent="156" guid="aXENds5jw0KdepWErZRNFg" x="2520.10" y="3304.48" text="auth_trait.php">
+<note>
+&lt;?php    require_once &apos;traits/business.php&apos;;    trait AuthTrait{        use Database, Business;        public function methodFromAuth(){            return &apos;methodFromAuth&apos;;        }    }?&gt;
+</note>
+</topic>
+<topic id="161" parent="156" guid="eShud3sxf0qu9u-oHYegXQ" x="2504.60" y="3349.04" text="ex11.php">
+<note>
+&lt;?php    require_once &apos;traits/database.php&apos;;    require_once &apos;classes/posts.php&apos;;    require_once &apos;traits/business.php&apos;;    require_once &apos;traits/auth_trait.php&apos;;    $post = new Posts();    $post-&gt;getList();    $post-&gt;methodFromDb();?&gt;
+</note>
+</topic>
+<topic id="162" parent="114" guid="Np3rlp33akSB_Zz2ob5oNQ" x="2458.10" y="3393.60" text="Namespace trong OOP"/>
+<topic id="163" parent="162" guid="ZAgEmvRCVEOfyQE-deuefA" x="2500.10" y="3438.16" text="Cách khai báo namespace"/>
+<topic id="164" parent="163" guid="tcrR2rK0T0uZ6bobi9XWiw" x="2493.10" y="3482.72" text="home/post.php">
+<note>
+&lt;?php    namespace App\Oop\Classes\Home;    class Post{        public function __construct(){            echo &quot;Hàm home post class&quot;;        }    }?&gt;
+</note>
+</topic>
+<topic id="165" parent="163" guid="wyHyL6W7YEyUXBjwE6PhuQ" x="2504.10" y="3527.28" text="home/product.php">
+<note>
+&lt;?php    namespace App\Oop\Classes\Home;    class Product{        public function __construct(){            echo &quot;Home product class&quot;;        }    }?&gt;
+</note>
+</topic>
+<topic id="166" parent="163" guid="akp0FTqK8UqByz2owZQyaA" x="2476.10" y="3571.84" text="main.php">
+<note>
+&lt;?php    namespace App\Oop\Classes;    // use App\Oop\Classes\Home\Post as HomePost;    // use App\Oop\Classes\Admin\Post as AdminPost;    /*    Trường hợp chung tiền tố (App\Oop\Classes\Home)    Cách 1:    use App\Oop\Classes\Home\Post;    use App\Oop\Classes\Home\Product;        Cách 2:    use App\Oop\Classes\Home\{Post, Product};    */    use App\Oop\Classes\Home\{Post, Product};    use \DateTime; // phải khai báo như v mới sử dụng được DateTime vì trong file này sử dụng namespace        class Main{        public function __construct(){            echo &apos;&lt;br&gt;&apos;;            // $homePost = new HomePost();            echo &apos;&lt;br&gt;&apos;;            // $adminPost = new AdminPost(&apos;Unicode&apos;);            $homeProduct = new Product();            echo &apos;&lt;br&gt;&apos;;            $current = new DateTime();            var_dump($current);        }    }?&gt;
+</note>
+</topic>
+<topic id="167" parent="162" guid="kuc-MDyzXUSkjVX4J2booQ" x="2465.10" y="3616.40" text="admin/post.php">
+<note>
+&lt;?php    namespace App\Oop\Classes\Admin;    class Post{        public function __construct($str){            echo &quot;Hàm admin post class: &quot;. $str;        }    }?&gt;
+</note>
+</topic>
+<topic id="168" parent="162" guid="j5Iq3ovp4ECFnaDQ_EEaQg" x="2459.60" y="3660.96" text="Cách sử dụng">
+<note>
+// Code trong file ex12.php&lt;?php    require_once &apos;classes/home/post.php&apos;;    require_once &apos;classes/admin/post.php&apos;;    require_once &apos;classes/main.php&apos;;    require_once &apos;classes/home/product.php&apos;;    use App\Oop\Classes\Main;    // Cách 1     $homePost = new App\Oop\Classes\Home\Post();    echo &apos;&lt;br&gt;&apos;;    $adminPost = new App\Oop\Classes\Admin\Post(&apos;Unicode&apos;);    echo &apos;&lt;hr&gt;&apos;;    // Cách 2    use App\Oop\Classes\Home\Post as HomePost;    use App\Oop\Classes\Admin\Post as AdminPost;    echo &apos;&lt;br&gt;&apos;;    $homePost = new HomePost();    echo &apos;&lt;br&gt;&apos;;    $adminPost = new AdminPost(&apos;Unicode&apos;);    $main = new Main();?&gt;
+</note>
+</topic>
+<topic id="169" parent="114" guid="9K7pPqgPFUi9f7KW2L7QTg" x="2473.10" y="3705.52" text="Final class và Final method"/>
+</topics>
+<relations/>
+</mindmap>
+</simplemind-mindmaps>
